@@ -1,0 +1,16 @@
+<template name="question">
+  <li class="question-cascade">
+    <div id="upper-part">
+	    {{#if ownQuestion}}<button class="delete">&times;</button>{{/if}}
+	    <span class="signature"><strong>{{username}}:</strong></span>
+    </div>
+    <br>
+    <div id="middle-part">
+      <span class="text">{{text}}</span>    
+    </div>
+    <br>
+    <div  id="answer-link">
+      <a class="answers-button" href="{{pathFor 'answerpage'}}">{{commentsCount}} answers</a>
+    </div>
+  </li>
+</template>

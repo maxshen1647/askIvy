@@ -1,0 +1,1002 @@
+/**
+ * styles.css
+ *
+ * CS50 Final Project
+ *
+ * Global CSS.
+ */
+
+
+/* Basic formatting for all elements in main page */
+.page-main
+{
+  display: block;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  text-align: left;
+  color: #000;
+  margin: 42px 0 0;
+  padding: 0;
+}
+
+/* Top header top position */
+#top
+{
+  height: 0px; 
+}
+
+/* Set basic depth, position and properties of navigation bar */
+#navbar-inner 
+{
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  min-height: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0px 1px 14px 4px #000;
+  background: -moz-linear-gradient(bottom center, #023E6F, #027EAF); /* Mozilla support */
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#027EAF), to(#023E6F));
+  background-attachment: scroll;
+}
+
+/* Sey basic format for elements in navigation bar */
+#toolbar .navbar-inner 
+{
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  z-index: 10;
+  border-radius: 0 0 0 0;
+  padding-left: 100%;
+  padding-right: 100%;
+  margin-left: -100%;
+  margin-right: -100%;
+  background-color: hsla(0,0%,20%,0.5);
+}
+
+/* Floating for back layer in navigation bar */
+.navbar .navbar-pull
+{
+  float: right;
+  margin: 0 10px 0 0;
+  list-style: none;
+  position: fixed;
+  left: 0;
+  display: block;
+}
+
+/* Fix navigation bar to top of screen */
+.navbar .nav
+{
+  position: fixed;
+  right: 0;
+  display: block;
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+/* Floating for list elements in navigation bar */
+.navbar .nav > li
+{
+  float: left;
+  line-height: 20px;
+  font-size: 15px;
+}
+
+/* Shadow and bordering for active elements in menu list */
+#mainmenu .active > a 
+{
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0 0 0 0;
+  font-weight: bold;
+  color: hsl(0,0%,92%);
+  text-decoration: none;
+}
+
+/* Shadow for elements in menu list */
+#mainmenu > li > a
+{
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: hsl(0,0%,92%);
+  text-shadow: none;
+}
+
+/* Color and shadows for elements in navigation bar */
+.navbar .nav > li > a
+{
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0 0 0 0;
+  font-weight: bold;
+  color: hsl(0,0%,92%);
+  text-decoration: none;
+}
+
+/* Block display for list elements in navigation bar */
+.nav > li > a
+{
+  display: block;
+}
+
+/* Styling for Ask Harvard Logo */
+a#logo
+{
+  font-family: Calibri;
+  font-weight: bold;
+  font-style: italic;
+  padding-right: 12px;
+  padding-left: 12px;
+  background: -moz-linear-gradient(bottom center, #023E6F, #027EAF); /* Mozilla support */
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#027EAF), to(#023E6F));
+  outline-color: none;
+  font-size: 28px;
+}
+a#logo span
+{
+  color: #66CD00;
+}
+
+/* Styling for on hover Ask Harvard Logo */
+a#logo:hover
+{
+  background-position: center bottom;
+  -webkit-stroke-width: 6px; /* Chrome and Safari support */
+  -webkit-stroke-color: #FFFFFF; /* Chrome and Safari support */
+  -webkit-fill-color: #FFFFFF; /* Chrome and Safari support */
+  -moz-stroke-width: 6px; /* Mozilla support */
+  -moz-stroke-color: #FFFFFF; /* Mozilla support */
+  -moz-fill-color: #FFFFFF; /* Mozilla support */
+  -o-stroke-width: 6px; /* Opera support */
+  -o-stroke-color: #FFFFFF; /* Opera support */
+  -o-fill-color: #FFFFFF; /* Opera support */
+  stroke-width: 6px; /* Standard support */
+  stroke-color: #FFFFFF; /* Standard support */
+  fill-color: #FFFFFF; /* Standard support */
+  text-shadow: 1px 0px 20px #FFFFFF;
+  color: #FFFFFF;
+}
+
+/* Styling for on hover Ask Harvard Logo */
+a#logo:hover span
+{
+  background-position: center bottom;
+  -webkit-stroke-width: 6px; /* Chrome and Safari support */
+  -webkit-stroke-color: #FFFFFF; /* Chrome and Safari support */
+  -webkit-fill-color: #FFFFFF; /* Chrome and Safari support */
+  -moz-stroke-width: 6px; /* Mozilla support */
+  -moz-stroke-color: #FFFFFF; /* Mozilla support */
+  -moz-fill-color: #FFFFFF; /* Mozilla support */
+  -o-stroke-width: 6px; /* Opera support */
+  -o-stroke-color: #FFFFFF; /* Opera support */
+  -o-fill-color: #FFFFFF; /* Opera support */
+  stroke-width: 6px; /* Standard support */
+  stroke-color: #FFFFFF; /* Standard support */
+  fill-color: #FFFFFF; /* Standard support */
+  text-shadow: 1px 0px 20px #FFFFFF;
+  color: #FFFFFF;
+  color: #76EE00;
+}
+
+/* Styling for on click Ask Harvard Logo */
+a#logo:active
+{
+    background: #025E8F;
+}
+
+/* Styling for Log In link */
+a#login-sign-in-link
+{
+  vertical-align: center;
+  margin-top: 1px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: hsl(0,0%,92%);
+  font-size: 15px;
+  margin-right: 6px; 
+  padding: 12px 10px;
+  text-shadow: none;
+  text-decoration: none;
+  font-weight: bold;
+  background: -moz-linear-gradient(bottom center, #023E6F, #027EAF); /* Mozilla support */
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#027EAF), to(#023E6F));
+  outline-color: none;
+  float: right;
+}
+
+/* Styling for Logged In Name display */
+a#login-name-link
+{
+  vertical-align: center;
+  margin-top: 1px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: hsl(0,0%,92%);
+  font-size: 15px;
+  margin-right: 6px;
+  padding: 12px 12px;
+  text-shadow: none;
+  text-decoration: none;
+  font-weight: bold;
+  background: -moz-linear-gradient(bottom center, #023E6F, #027EAF); /* Mozilla support */
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#027EAF), to(#023E6F));
+  outline-color: none;
+  float: right;
+}
+
+/* Styling for Sign In link on hover */
+a#login-sign-in-link:hover
+{
+  background-position: center bottom;
+  -webkit-stroke-width: 6px; /* Chrome and Safari support */
+  -webkit-stroke-color: #FFFFFF; /* Chrome and Safari support */
+  -webkit-fill-color: #FFFFFF; /* Chrome and Safari support */
+  -moz-stroke-width: 6px; /* Mozilla support */
+  -moz-stroke-color: #FFFFFF; /* Mozilla support */
+  -moz-fill-color: #FFFFFF; /* Mozilla support */
+  -o-stroke-width: 6px; /* Opera support */
+  -o-stroke-color: #FFFFFF; /* Opera support */
+  -o-fill-color: #FFFFFF; /* Opera support */
+  stroke-width: 6px; /* Standard support */
+  stroke-color: #FFFFFF; /* Standard support */
+  fill-color: #FFFFFF; /* Standard support */
+  text-shadow: 1px 0px 20px #FFFFFF;
+  color: #FFFFFF;
+}
+
+/* Styling for Sign In link on click */
+a#login-sign-in-link:active
+{
+    background: #025E8F;
+}
+
+/* Styling for the Q&A counter */
+#question-counter
+{
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: hsl(0,0%,92%);
+  font-size: 14px;
+  text-shadow: none;
+  text-decoration: none;
+  padding-top: 11px;
+  padding-left: 4px;
+}
+
+/* Styling for Home */
+a#link-main
+{
+  background: -moz-linear-gradient(bottom center, #023E6F, #027EAF); /* Mozilla support */
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#027EAF), to(#023E6F));
+  outline-color: none;
+  font-size: 15px;
+}
+
+/* Styling for on hover Home */
+a#link-main:hover
+{
+  background-position: center bottom;
+  -webkit-stroke-width: 6px; /* Chrome and Safari support */
+  -webkit-stroke-color: #FFFFFF; /* Chrome and Safari support */
+  -webkit-fill-color: #FFFFFF; /* Chrome and Safari support */
+  -moz-stroke-width: 6px; /* Mozilla support */
+  -moz-stroke-color: #FFFFFF; /* Mozilla support */
+  -moz-fill-color: #FFFFFF; /* Mozilla support */
+  -o-stroke-width: 6px; /* Opera support */
+  -o-stroke-color: #FFFFFF; /* Opera support */
+  -o-fill-color: #FFFFFF; /* Opera support */
+  stroke-width: 6px; /* Standard support */
+  stroke-color: #FFFFFF; /* Standard support */
+  fill-color: #FFFFFF; /* Standard support */
+  text-shadow: 1px 0px 20px #FFFFFF;
+  color: #FFFFFF;
+}
+
+/* Styling for on click Home */
+a#link-main:active
+{
+    background: #025E8F;
+}
+
+/* Creates, aligns and stylizes bottom banner */
+#copyright
+{
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  min-height: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0px 1px 14px 4px #000;
+  background: -moz-linear-gradient(bottom center, #023E6F, #027EAF); /* Mozilla support */
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#027EAF), to(#023E6F));
+  background-attachment: scroll;
+  bottom: -5px;
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+  vertical-align: middle;
+}
+
+/* Position and width for text and button wrap in Main page */
+.wrap
+{
+  z-index: 100;
+  position: relative;
+  width: 880px;
+  margin-top: 0%;
+  height: 100%;
+
+}
+
+/* Styling for Main page background */
+#main-bg
+{
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background: url("/img/john-harvard1.jpg");
+  background-position: 50% -10%;
+  background-size: cover;
+}
+
+/* Adds margin and position for Ask Now button */
+.content
+{
+  z-index: 950;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+/* Styling for Ask Now button */
+.access-homepage
+{
+  z-index: 950;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 1px 0px 0px rgba(255, 255, 255, 0.05) inset, -1px 0px 0px rgba(255, 255, 255, 0.05) inset, 0px 1px 0px rgba(255, 255, 255, 0.1) inset;
+  position: relative;
+  left: 17.2%;
+  top: 66%;
+  padding: 13px 13px 12px 42px;
+  font-size: 16px;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+  border: 1px solid #1C5380;
+  background-position: 50% 50%;
+  color: #fff;
+  margin: auto;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#027EAF), to(#023E6F)); /* Safari and Chrome support */
+  background: -moz-linear-gradient(bottom center, #023E6F, #027EAF); /* Mozilla support */
+  background: -o-linear-gradient(bottom center, #023E6F, #027EAF); /* Operasupport */
+  background: linear-gradient(bottom center, #023E6F, #027EAF); /* Standard support */
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 1em;
+  text-decoration: none !important;
+  display: inline-block;
+  font-family: "proxima-nova","Helvetica Neue",Arial,Helvetica,sans-serif;
+}
+
+/* Hover styling for Ask Now button */
+.content .access-homepage:hover
+{
+  background-color: #EEE;
+}
+
+/* Active styling for Ask Now button */
+.content .access-homepage:active
+{
+  border-color: #133856;
+  background: #025E8F;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15) inset, 0px 0px 1px rgba(0, 0, 0, 0.15) inset, 0px 1px 0px rgba(255, 255, 255, 0.2);
+  border-color: #133856;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* Visited styling for Ask Now button */
+.content .access-homepage:visited
+{
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Add house icon in Ask Now button */
+.content .access-homepage i
+{
+  z-index: 100;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url("/img/shared-assets.png") no-repeat scroll 4px -196px transparent;
+}
+
+/* Sets properties of background picture in Home */
+#question-page
+{
+  background: url("/img/harvard.png");
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-repeat: no-repeat;
+  z-index: 50;
+  background-position: 50% 50%;
+  overflow-x: hidden;
+  background-size: cover;
+}
+
+/* Sets overflow properties in Home */
+.homepage
+{
+overflow-x: hidden;
+}
+
+/* Sets width and height of Home page */
+#page-outer
+{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 950;
+  overflow-x: hidden;
+}
+
+/* Sets the padding and position of the canvas that wraps all text boxes within Home */
+.content-wrapper
+{
+  padding: 56px 14px 15px;
+  position: relative;
+  margin: 0 auto;
+  min-height: 0px;
+  left: 23%;
+}
+
+/* Sets radius and position of question box */
+.content-main
+{
+  float: left;
+  margin: 0 10px;
+  border-radius: 5px 5px 0 0;
+  border-color: #BFE0EC !important;
+  position: absolute;
+  margin-left: 56px;
+}
+
+/* Sets border, color and overflow of whole question box */
+.home-question-box
+{
+  border-color: #BFE0EC !important;
+  padding: 10px 12px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#55acee), to(#027EAF)); /* Safari and Chrome support */
+  background: -moz-linear-gradient(bottom center, #027EAF, #55acee); /* Mozilla support */
+  background: -o-linear-gradient(bottom center, #027EAF, #55acee); /* Operasupport */
+  background: linear-gradient(bottom center, #027EAF, #55acee); /* Standard support */
+  border-radius: 6px 6px 0 0;
+  position: absolute;
+  overflow-x: hidden;
+}
+
+/* Sets font, margins and overflow in text area box */
+.new-task .question-content
+{
+  position: relative;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  overflow-x: hidden;
+}
+
+/* Sets format, position and size of text area in ask box */
+#ask-box
+{
+  font-size: 14px;
+  padding: 10px 6px;
+  display: block;
+  overflow-y: auto;
+  word-wrap: break-word;
+  border-color: #023E6F;
+  border: 0.5px solid;
+  resize: none;
+  min-height: 80px;
+  overflow: hidden;
+  text-shadow: none;
+  vertical-align: top;
+  width: 600px;
+  border-radius: 6px 6px 0px 0px;
+  text-align: left;
+  margin: 0;
+  outline: 0;
+  background-color: #fff;
+  -webkit-line-break: after-white-space;
+  direction: ltr;
+  unicode-bidi: embed;
+}
+
+/* Sets ask anonymously checkbox and label to the left of the ask-questions box */
+.question-extras
+{
+  float: left;
+  top: 7px;
+  font-size: 14px;
+  position: relative;
+  border-radius: 4px;
+}
+
+/* Sets padding and indentation for ask anonymously feature in Home */
+.hide-completed
+{
+    display: inline-block;;
+    padding-left: 20px;
+    text-indent: -15px;
+    color: #fff;
+}
+
+/* Sets format for Ask Anonymously label */
+.anonymous-blurb
+{
+    width: 13px;
+    height: 13px;
+    padding: 5px;
+    vertical-align: bottom;
+    position: relative;
+    top: 0px;
+    left: -20px;
+    *overflow: hidden;
+    float: left;
+}
+
+/* Sets position of ask button within the ask-question box */
+.ask-button
+{
+  float: right;
+}
+
+/* Styling for Ask button in Home. Based on twitter's tweett button */
+#question-submit
+{
+background-color: #023E6F;
+background-size: auto;
+border-bottom-color: rgba(0, 0, 0, 0);
+border-radius: 4px;
+border-bottom-style: solid;
+border-left-color: rgba(0, 0, 0, 0);
+border-left-style: solid;
+border-left-width: 0px;
+border-right-color: rgba(0, 0, 0, 0);
+border-right-style: solid;
+border-right-width: 0px;
+border-top-color: rgba(0, 0, 0, 0);
+border-top-style: solid;
+border-top-width: 0px;
+box-shadow: none;
+color: rgb(255, 255, 255);
+cursor: pointer;
+display: inline-block;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size: 15px;
+font-weight: bold;
+height: 30px;
+vertical-align: center;
+padding-bottom: 8px;
+padding-left: 17px;
+padding-right: 16px;
+padding-top: 4px;
+position: relative;
+text-align: center;
+width: 96px;
+}
+
+/* Adds glow and changes background of ask button on hover */
+#question-submit:hover
+{
+  -webkit-stroke-width: 6px; /* Chrome and Safari support */
+  -webkit-stroke-color: #FFFFFF; /* Chrome and Safari support */
+  -webkit-fill-color: #FFFFFF; /* Chrome and Safari support */
+  -moz-stroke-width: 6px; /* Mozilla support */
+  -moz-stroke-color: #FFFFFF; /* Mozilla support */
+  -moz-fill-color: #FFFFFF; /* Mozilla support */
+  -o-stroke-width: 6px; /* Opera support */
+  -o-stroke-color: #FFFFFF; /* Opera support */
+  -o-fill-color: #FFFFFF; /* Opera support */
+  stroke-width: 6px; /* Standard support */
+  stroke-color: #FFFFFF; /* Standard support */
+  fill-color: #FFFFFF; /* Standard support */
+  text-shadow: 1px 0px 20px #FFFFFF;
+  color: #FFFFFF;
+}
+
+/* Changes background of ask button on click */
+#question-submit:active
+{
+  background: #55acee;
+  outline: none;
+}
+
+/* Sets position in screen for question boxes */
+.question-container
+{
+  position: absolute;
+  margin-left: 0px;
+  list-style: none;
+  display: block;
+  top: 194px;
+  left: 30px;
+}
+
+/* Eliminates list tag in question boxes */
+.question-items
+{
+  list-style: none;
+}
+
+/* Question box formatting */
+.question-cascade
+{
+  z-index: 100;
+  border: 1px solid #e1e8ed;
+  background-color: #fff;
+  width: 624px; 
+  position: relative;
+  min-height: 51px;
+  padding-bottom: 9px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 6px;
+  text-align: start;
+  border-spacing: 4px;
+  list-style: none;
+}
+
+/* Margins for name subsection inside question box */
+#upper-part
+{
+  z-index: 902;
+  border-bottom: 1px solid #e1e8ed;
+  padding-bottom: 5px;
+}
+
+/* Margins for text subsection inside question box */
+#middle-part
+{
+  margin-top: -8px;
+  min-height: 40px;
+  height: auto;
+}
+
+/* Margins for answer subsection inside question box */
+#answer-link
+{
+  margin-top: -14px;
+  padding-top: 4px;
+  border-top: 1px solid #e1e8ed;
+  width: 595px;
+  margin-bottom: 22px;
+}
+
+/* Text-box formatting for questions */
+.text
+{
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  vertical-align: top;
+}
+
+/* Basic styling for delete button */
+.delete
+{
+  background-color: #fff;
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-style: solid;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-style: solid;
+  border-top-width: 0px;
+  box-shadow: none;
+  color: #ccd6dd;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  vertical-align: center;
+  position: relative;
+  text-align: center;
+  float: right;
+  margin-top: 1px;
+  transition: 0.4s;
+}
+
+/* Changes background of delete button on mouse hover */
+.delete:hover
+{
+    border-radius: 4px;
+    background-color: #ccd6dd;
+    color: #fff;
+}
+
+/* Changes background of delete button when clicked */
+.delete:active
+{
+  border-radius: 4px;
+  background-color: #027EAF;
+}
+
+/* Formatting for answer button */
+.answers-button
+{
+  background-color: #fff;
+  border-radius: 6px;
+  border-color: transparent;
+  color: #23527c;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  vertical-align: center;
+  position: relative;
+  text-align: center;
+  float: left;
+  left: -8px;
+  height: 25px;
+  padding-right: 2px;
+  padding-left: 2px;
+  margin-left: 5px;
+  margin-top: -1px;
+  padding-top: 2px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+/* Changes answers button background on hover */
+.answers-button:hover
+{
+  background: #55acee;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Changes answers button background when clicked */
+.answers-button:active
+{
+  background: #023E6F;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Sets the display of contents in the answer page */
+.answer-page
+{
+  height: auto;
+  width: 100%;
+  position: absolute;
+  z-index: 950;
+  overflow-x: hidden;
+  top: 60px;
+}
+
+/* Sets all contents to the middle of the page */
+.answer-page-content
+{
+  position: relative;
+  float: left;
+  left: 28%;
+}
+
+/* Sets the width of the question frame */
+.question-frame
+{
+  border: 3px solid rgb(191, 224, 236);
+  border-radius: 6px;
+  width: 630px;
+}
+
+/* sETS THE BACKGROUND IN THE ANSWER PAGE */
+#answer-page-background
+{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background: url("/img/answer-background.jpg");
+  background-position: 50% 50%;
+  z-index: 50;
+  overflow-x: hidden;
+  background-size: cover;
+}
+
+/* Styling for the box that contains the answer list */
+.comment-stream
+{
+  z-index: 100;
+  border: 1px solid #027EAF;
+  background-color: #027EAF;
+  width: 624px;
+  top: 10px;
+  position: relative;
+  min-height: 51px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 6px;
+  text-align: start;
+  border-spacing: 4px;
+  list-style: none;
+  word-wrap: break-word;
+  border-radius: 6px;
+  left: 2px;
+} 
+
+/* Padding, alignment and background for the answer list */
+.answers-list
+{
+  border: 1px solid #e1e8ed;
+  background-color: #fff;
+  width: 612px; 
+  position: relative;
+  padding-bottom: 9px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: start;
+  border-spacing: 4px;
+  list-style: none;
+  margin-left: -7px;
+  height: auto;
+}
+
+#top-answered-box
+{
+  border-bottom: 1px solid #e1e8ed;
+  padding-bottom: 3px;
+}
+
+/* Upvote button format */
+.upvote
+{
+  background-color: transparent;
+  border-color: transparent;
+  color: #ccd6dd;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  vertical-align: center;
+  position: relative;
+  top: -2px;
+  right: 1px;
+  text-align: center;
+  float: right;
+  padding-bottom: 3px;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-top: 3px;
+  transition: 0.4s;
+}
+
+/* Format of upvote button on mouse hover */
+.upvote:hover
+{
+  color: #204d74;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+/* Format for on-click upvote button */
+.upvote:active
+{
+  background-color: #027EAF;
+  border-color: #027EAF;
+  color: #fff;
+}
+
+/* Formatting for clicked upvoted button */
+.upvote.btn.btn-default.disabled
+{
+  background-color: transparent;
+  border-color: transparent;
+  color: #23527c;
+}
+
+/* Font size for author */
+.author
+{
+  font-size: 16px;
+}
+
+/* Font and color for date of submission */
+.date
+{
+  font-size: 12px;
+  color: #bcc6cd;
+}
+
+/* Sets the width of the form that contains the answer box */
+.form-group
+{
+  top: 4px;
+  width: 624px;
+}
+
+/* Sets the margins of the answer label */
+.answer-box-label
+{
+  margin-left: 5px;
+  margin-top: 15px;
+}
+
+/* Sets format for answer button */
+#submit-answer-button
+{
+  margin-bottom: 60px;
+  background-color: #027EAF;;
+  background-size: auto;
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  border-bottom-style: solid;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-style: solid;
+  border-top-width: 0px;
+  box-shadow: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+/* Glow effect for answer submit button on hover */
+#submit-answer-button:hover
+{
+  -webkit-stroke-width: 6px; /* Chrome and Safari support */
+  -webkit-stroke-color: #FFFFFF; /* Chrome and Safari support */
+  -webkit-fill-color: #FFFFFF; /* Chrome and Safari support */
+  -moz-stroke-width: 6px; /* Mozilla support */
+  -moz-stroke-color: #FFFFFF; /* Mozilla support */
+  -moz-fill-color: #FFFFFF; /* Mozilla support */
+  -o-stroke-width: 6px; /* Opera support */
+  -o-stroke-color: #FFFFFF; /* Opera support */
+  -o-fill-color: #FFFFFF; /* Opera support */
+  stroke-width: 6px; /* Standard support */
+  stroke-color: #FFFFFF; /* Standard support */
+  fill-color: #FFFFFF; /* Standard support */
+  text-shadow: 1px 0px 20px #FFFFFF;
+  color: #FFFFFF;
+}
+
+/* Sets format for answer button on click */
+#submit-answer-button:active
+{
+  background: #55acee;
+}
+
+/* Sets margins in the answer box */
+.comment-form
+{
+    margin-top: 30px;
+    height: 190px;
+    margin-left: 3px;
+}
+
+/* Disables resize in the answer box */
+.form-control
+{
+  resize: none;
+}
