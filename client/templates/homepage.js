@@ -28,8 +28,9 @@ Template.homepage.helpers({
           createdAt: new Date(),  // timestamp
           userId: Meteor.userId(), // id of logged in user
           username: "Anonymous", // logs the username as anonymous
-          status: false
-        });  
+          status: false // whether question is answered
+        }); 
+        alert('Thanks! Your question has been submitted and will appear on the homepage when it is answered.'); 
       // if checked, insert question with actual username
       } else {
         Questions.insert({
@@ -37,8 +38,9 @@ Template.homepage.helpers({
           createdAt: new Date(),  //timestamp
           userId: Meteor.userId(), // id of logged in user
           username: Meteor.user().username, // username of logged in user
-          status: false 
+          status: false // whether question is answered 
         });
+        alert('Thanks! Your question has been submitted and will appear on the homepage when it is answered.');
       }
 
       // Clear form

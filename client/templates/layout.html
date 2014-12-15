@@ -13,9 +13,11 @@
 									<li>
 										<a id="link-main" href="/homepage">Home</a>
 									</li>
+									{{#if harvardStudent}}
 									<li>
-										<a id="link-questions" href="/unanswered">Questions</a>
+										<a id="link-questions" href="/unanswered">Unanswered</a>
 									</li>
+									{{#if}}
 									<li>
 										<div id="link-login">{{> loginButtons}}</div>
 									</li>
