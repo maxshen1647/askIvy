@@ -1,3 +1,7 @@
 facebook login functionality
+top answers
 different pages for harvard students
 allow users to create a profile (year, concentration, etc.)
+
+put insert and remove on the server side
+publications, more efficient database stuff

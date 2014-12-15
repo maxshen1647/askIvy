@@ -1,7 +1,7 @@
 Template.homepage.helpers({
     // returns all questions in the DB
     questions: function () {
-      return Questions.find({}, {sort: {createdAt: -1}});
+      return Questions.find({status: true}, {sort: {createdAt: -1}});
     },
     // returns the status of the ask anon checkbox
     hideCompleted: function () {
@@ -27,7 +27,8 @@ Template.homepage.helpers({
           text: text,
           createdAt: new Date(),  // timestamp
           userId: Meteor.userId(), // id of logged in user
-          username: "Anonymous" // logs the username as anonymous
+          username: "Anonymous", // logs the username as anonymous
+          status: false
         });  
       // if checked, insert question with actual username
       } else {
@@ -35,7 +36,8 @@ Template.homepage.helpers({
           text: text,
           createdAt: new Date(),  //timestamp
           userId: Meteor.userId(), // id of logged in user
-          username: Meteor.user().username // username of logged in user 
+          username: Meteor.user().username, // username of logged in user
+          status: false 
         });
       }
 
