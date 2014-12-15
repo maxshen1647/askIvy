@@ -30,7 +30,7 @@ Template.homepage.helpers({
           username: "Anonymous", // logs the username as anonymous
           status: false // whether question is answered
         }); 
-        alert('Thanks! Your question has been submitted and will appear on the homepage when it is answered.'); 
+        alert('Thanks! Your question has been submitted. You can check the status of your questions by clicking My Questions on the menu bar.'); 
       // if checked, insert question with actual username
       } else {
         Questions.insert({
@@ -40,7 +40,7 @@ Template.homepage.helpers({
           username: Meteor.user().username, // username of logged in user
           status: false // whether question is answered 
         });
-        alert('Thanks! Your question has been submitted and will appear on the homepage when it is answered.');
+        alert('Thanks! Your question has been submitted. You can check the status of your questions by clicking My Questions on the menu bar.'); 
       }
 
       // Clear form
