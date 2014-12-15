@@ -15,7 +15,12 @@
 									</li>
 									{{#if harvardStudent}}
 									<li>
-										<a id="link-questions" href="/unanswered">Unanswered</a>
+										<a id="link-unanswered" href="/unanswered">Unanswered</a>
+									</li>
+									{{/if}}
+									{{#if currentUser}}
+									<li>
+										<a id="link-myquestions" href="/myquestions">My Questions</a>
 									</li>
 									{{/if}}
 									<li>
