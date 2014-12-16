@@ -37,7 +37,7 @@ Template.homepage.helpers({
           text: text,
           createdAt: new Date(),  //timestamp
           userId: Meteor.userId(), // id of logged in user
-          username: Meteor.user().username, // username of logged in user
+          username: Meteor.user().username || Meteor.user().services.facebook.name, // username or fb name of logged in user
           status: false // whether question is answered 
         });
         alert('Thanks! Your question has been submitted. You can check the status of your questions by clicking My Questions on the menu bar.'); 
