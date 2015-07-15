@@ -6,3 +6,5 @@ put insert and remove on the server side
 publications, more efficient database stuff
 
 debug commetns counter
+
+testing
