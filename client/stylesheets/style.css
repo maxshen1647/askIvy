@@ -35,8 +35,7 @@
   padding-left: 20px;
   padding-right: 20px;
   box-shadow: 0px 1px 14px 4px #000;
-  background: -moz-linear-gradient(bottom center, #023E6F, #027EAF); /* Mozilla support */
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#027EAF), to(#023E6F));
+  background: #027EAF;
   background-attachment: scroll;
 }
 
@@ -128,10 +127,10 @@ a#logo
   font-style: italic;
   padding-right: 12px;
   padding-left: 12px;
-  background: -moz-linear-gradient(bottom center, #023E6F, #027EAF); /* Mozilla support */
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#027EAF), to(#023E6F));
+  background: #027EAF;
   outline-color: none;
   font-size: 28px;
+  right: 1;
 }
 a#logo span
 {
@@ -199,8 +198,7 @@ a#login-sign-in-link
   text-shadow: none;
   text-decoration: none;
   font-weight: bold;
-  background: -moz-linear-gradient(bottom center, #023E6F, #027EAF); /* Mozilla support */
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#027EAF), to(#023E6F));
+  background: #027EAF;
   outline-color: none;
   float: right;
 }
@@ -219,8 +217,7 @@ a#login-name-link
   text-shadow: none;
   text-decoration: none;
   font-weight: bold;
-  background: -moz-linear-gradient(bottom center, #023E6F, #027EAF); /* Mozilla support */
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#027EAF), to(#023E6F));
+  background: #027EAF;
   outline-color: none;
   float: right;
 }
@@ -267,8 +264,7 @@ a#login-sign-in-link:active
 /* Styling for Home */
 a#link-main
 {
-  background: -moz-linear-gradient(bottom center, #023E6F, #027EAF); /* Mozilla support */
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#027EAF), to(#023E6F));
+  background: #027EAF;
   outline-color: none;
   font-size: 15px;
 }
@@ -299,24 +295,72 @@ a#link-main:active
     background: #025E8F;
 }
 
-/* Creates, aligns and stylizes bottom banner */
-#copyright
+/* Styling for Unanswered */
+a#link-unanswered
 {
-  z-index: 1000;
-  position: fixed;
-  width: 100%;
-  min-height: 16px;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-shadow: 0px 1px 14px 4px #000;
-  background: -moz-linear-gradient(bottom center, #023E6F, #027EAF); /* Mozilla support */
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#027EAF), to(#023E6F));
-  background-attachment: scroll;
-  bottom: -5px;
-  color: #fff;
-  text-align: center;
-  font-size: 11px;
-  vertical-align: middle;
+  background: #027EAF;
+  outline-color: none;
+  font-size: 15px;
+}
+
+/* Styling for on hover Unanswered */
+a#link-unanswered:hover
+{
+  background-position: center bottom;
+  -webkit-stroke-width: 6px; /* Chrome and Safari support */
+  -webkit-stroke-color: #FFFFFF; /* Chrome and Safari support */
+  -webkit-fill-color: #FFFFFF; /* Chrome and Safari support */
+  -moz-stroke-width: 6px; /* Mozilla support */
+  -moz-stroke-color: #FFFFFF; /* Mozilla support */
+  -moz-fill-color: #FFFFFF; /* Mozilla support */
+  -o-stroke-width: 6px; /* Opera support */
+  -o-stroke-color: #FFFFFF; /* Opera support */
+  -o-fill-color: #FFFFFF; /* Opera support */
+  stroke-width: 6px; /* Standard support */
+  stroke-color: #FFFFFF; /* Standard support */
+  fill-color: #FFFFFF; /* Standard support */
+  text-shadow: 1px 0px 20px #FFFFFF;
+  color: #FFFFFF;
+}
+
+/* Styling for on click Unanswered */
+a#link-unanswered:active
+{
+    background: #025E8F;
+}
+
+/* Styling for My Questions */
+a#link-myquestions
+{
+  background: #027EAF;
+  outline-color: none;
+  font-size: 15px;
+}
+
+/* Styling for on hover My Questions */
+a#link-myquestions:hover
+{
+  background-position: center bottom;
+  -webkit-stroke-width: 6px; /* Chrome and Safari support */
+  -webkit-stroke-color: #FFFFFF; /* Chrome and Safari support */
+  -webkit-fill-color: #FFFFFF; /* Chrome and Safari support */
+  -moz-stroke-width: 6px; /* Mozilla support */
+  -moz-stroke-color: #FFFFFF; /* Mozilla support */
+  -moz-fill-color: #FFFFFF; /* Mozilla support */
+  -o-stroke-width: 6px; /* Opera support */
+  -o-stroke-color: #FFFFFF; /* Opera support */
+  -o-fill-color: #FFFFFF; /* Opera support */
+  stroke-width: 6px; /* Standard support */
+  stroke-color: #FFFFFF; /* Standard support */
+  fill-color: #FFFFFF; /* Standard support */
+  text-shadow: 1px 0px 20px #FFFFFF;
+  color: #FFFFFF;
+}
+
+/* Styling for on click My Questions */
+a#link-myquestions:active
+{
+    background: #025E8F;
 }
 
 /* Position and width for text and button wrap in Main page */
@@ -477,10 +521,7 @@ overflow-x: hidden;
 {
   border-color: #BFE0EC !important;
   padding: 10px 12px;
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#55acee), to(#027EAF)); /* Safari and Chrome support */
-  background: -moz-linear-gradient(bottom center, #027EAF, #55acee); /* Mozilla support */
-  background: -o-linear-gradient(bottom center, #027EAF, #55acee); /* Operasupport */
-  background: linear-gradient(bottom center, #027EAF, #55acee); /* Standard support */
+  background: #027EAF;
   border-radius: 6px 6px 0 0;
   position: absolute;
   overflow-x: hidden;
@@ -1000,3 +1041,6 @@ width: 96px;
 {
   resize: none;
 }
+
+
+

@@ -36,7 +36,7 @@ Meteor.startup(function() {
   // takes a user object and a url, and returns the body text for the email.
   Accounts.emailTemplates.verifyEmail.text = function(user, url) {
     return "Dear " + user.username + ",\n\n" +  
-    "Welcome to askHarvard, Harvard's open Q & A platform to the world. The website is entirely run by current Harvard undergaduates. Please click on the following link to verify your email address:\n\n" + url;
+    "Welcome to askHarvard, Harvard's open Q & A platform to the world. The website is entirely run by current Harvard undergraduates. Please click on the following link to verify your email address:\n\n" + url;
   };
 });
 

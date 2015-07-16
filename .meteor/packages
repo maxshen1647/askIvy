@@ -5,10 +5,8 @@
 
 meteor-platform
 accounts-password
-accounts-ui
 accounts-facebook
 iron:router
 email
 mizzao:bootstrap-3
-
-
+accounts-ui

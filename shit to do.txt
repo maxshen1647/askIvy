@@ -3,8 +3,11 @@ top answers
 allow users to create a profile (year, concentration, etc.)
 
 put insert and remove on the server side
-publications, more efficient database stuff
 
-debug commetns counter
+publish: all answered questions, all of the users own unanswered question
+if harvard, then all unanswered
+subscribe?
+
+
 
 
