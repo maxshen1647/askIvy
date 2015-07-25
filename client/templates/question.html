@@ -2,7 +2,10 @@
   <li class="question-cascade">
     <div id="upper-part">
 	    {{#if deletable}}<button class="delete">&times;</button>{{/if}}
-	    <span class="signature"><strong>{{username}}:</strong></span>
+	    <span class="signature"><strong>{{username}}
+        {{#if harvardStudent}}<span class="verified-question">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>{{/if}}
+      </strong></span>
+      <span class="date">{{#if harvardStudent}}Harvard Verified{{/if}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posted on {{timestamp}}</span>
     </div>
     <br>
     <div id="middle-part">

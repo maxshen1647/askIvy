@@ -1,9 +1,10 @@
+functionality
+editing questions and answers
+allow users to create a profile (year, concentration, etc.)
 facebook login functionality
 top answers
-allow users to create a profile (year, concentration, etc.)
 
-put insert and remove on the server side
-
+efficiency
 publish: all answered questions, all of the users own unanswered question
 if harvard, then all unanswered
 subscribe?

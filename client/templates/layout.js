@@ -1,9 +1,3 @@
-// enable username and email for login
-Accounts.ui.config({
-    passwordSignupFields: "USERNAME_AND_EMAIL"
-    
-  });
-
 Template.layout.helpers({
     // returns number of questions in database
     questionsCount: function () {

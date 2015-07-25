@@ -1,8 +1,10 @@
 <template name="answer">
   <li class="answers-list">
     <h4 id="top-answered-box">
-      <span class="author">{{author}}</span>
-      <span class="date">on {{timestamp}}:</span>
+      <span class="author">
+        {{author}}{{#if harvardStudent}}<span class="verified-answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>{{/if}}      
+      </span>
+      <span class="date">{{#if harvardStudent}}Harvard Verified{{/if}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posted on {{timestamp}}</span>
       {{#if ownAnswer}}<button class="delete">&times;</button>{{/if}}
       <button href="#" class="upvote btn btn-default {{upvotedClass}}">{{votes}}⬆</button>
     </h4>

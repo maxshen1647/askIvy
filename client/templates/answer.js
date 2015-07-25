@@ -5,7 +5,7 @@ Template.answer.helpers({
   },
   // returns the time of submission
   timestamp: function() {
-    return this.submitted.toDateString();
+    return this.submitted.toUTCString();
   },
   // returns the status of the upvote button
   upvotedClass: function() {    
@@ -13,19 +13,27 @@ Template.answer.helpers({
     if (userId && !_.include(this.upvoters, userId)) {      
       return 'btn-primary upvotable';    
     } else {      
-      return 'disabled';    
+      return 'btn-primary unvotable';    
     }  
+  },
+  //checks whether answerer is a harvard student
+  harvardStudent: function(){
+    return this.verified;
   }
 });
 
 Template.answer.events({
   // remove answer if delete button is clicked
   "click .delete": function () {
-    Answers.remove(this._id);
+    Meteor.call('removeAnswer', this._id);
   },
   // calls upvote method if upvote button is clicked
   "click .upvotable": function(e) {   
     e.preventDefault();    
     Meteor.call('upvote', this._id);  
+  },
+  "click .unvotable": function(e) {   
+    e.preventDefault();    
+    Meteor.call('unvote', this._id);  
   }
 });

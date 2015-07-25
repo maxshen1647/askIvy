@@ -185,67 +185,11 @@ a#logo:active
 }
 
 /* Styling for Log In link */
-a#login-sign-in-link
+.link-login
 {
   vertical-align: center;
-  margin-top: 1px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  color: hsl(0,0%,92%);
-  font-size: 15px;
-  margin-right: 6px; 
-  padding: 12px 10px;
-  text-shadow: none;
-  text-decoration: none;
-  font-weight: bold;
-  background: #027EAF;
-  outline-color: none;
-  float: right;
-}
-
-/* Styling for Logged In Name display */
-a#login-name-link
-{
-  vertical-align: center;
-  margin-top: 1px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  color: hsl(0,0%,92%);
-  font-size: 15px;
-  margin-right: 6px;
-  padding: 12px 12px;
-  text-shadow: none;
-  text-decoration: none;
-  font-weight: bold;
-  background: #027EAF;
-  outline-color: none;
-  float: right;
-}
-
-/* Styling for Sign In link on hover */
-a#login-sign-in-link:hover
-{
-  background-position: center bottom;
-  -webkit-stroke-width: 6px; /* Chrome and Safari support */
-  -webkit-stroke-color: #FFFFFF; /* Chrome and Safari support */
-  -webkit-fill-color: #FFFFFF; /* Chrome and Safari support */
-  -moz-stroke-width: 6px; /* Mozilla support */
-  -moz-stroke-color: #FFFFFF; /* Mozilla support */
-  -moz-fill-color: #FFFFFF; /* Mozilla support */
-  -o-stroke-width: 6px; /* Opera support */
-  -o-stroke-color: #FFFFFF; /* Opera support */
-  -o-fill-color: #FFFFFF; /* Opera support */
-  stroke-width: 6px; /* Standard support */
-  stroke-color: #FFFFFF; /* Standard support */
-  fill-color: #FFFFFF; /* Standard support */
-  text-shadow: 1px 0px 20px #FFFFFF;
-  color: #FFFFFF;
-}
-
-/* Styling for Sign In link on click */
-a#login-sign-in-link:active
-{
-    background: #025E8F;
+  margin-top: -4px;
+  padding: 0px 10px; 
 }
 
 /* Styling for the Q&A counter */
@@ -964,6 +908,19 @@ width: 96px;
 {
   font-size: 12px;
   color: #bcc6cd;
+}
+.verified-answer
+{
+  background: url("/img/icons.png");
+  background-size: 30px 628px;
+  background-position: 0px -137px;
+}
+
+.verified-question
+{
+  background: url("/img/icons.png");
+  background-size: 30px 628px;
+  background-position: -3px -140px;
 }
 
 /* Sets the width of the form that contains the answer box */

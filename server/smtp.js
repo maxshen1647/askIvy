@@ -9,7 +9,7 @@ Meteor.startup(function () {
 
   process.env.MAIL_URL = 'smtp://' + encodeURIComponent(smtp.username) + ':' + encodeURIComponent(smtp.password) + '@' + encodeURIComponent(smtp.server) + ':' + smtp.port;
 });
-
+/*
 // send a verification email when new user is created
 Accounts.onCreateUser(function(options, user) {
   user.profile = {};
@@ -21,7 +21,7 @@ Accounts.onCreateUser(function(options, user) {
   
   return user;
 });
-
+*/
 // configure verification email 
 Meteor.startup(function() {
   
@@ -36,10 +36,10 @@ Meteor.startup(function() {
   // takes a user object and a url, and returns the body text for the email.
   Accounts.emailTemplates.verifyEmail.text = function(user, url) {
     return "Dear " + user.username + ",\n\n" +  
-    "Welcome to askHarvard, Harvard's open Q & A platform to the world. The website is entirely run by current Harvard undergraduates. Please click on the following link to verify your email address:\n\n" + url;
+    "Welcome to askHarvard, Harvard's open Q & A platform to the world. The website is entirely run by current Harvard undergraduates. Please click on the following link to verify your email address:\n\n" + url + "\n\n" + "Cheers,\naskHarvard Team";
   };
 });
-
+/*
 // does not allow user to log in until email verification link is clicked
 Accounts.validateLoginAttempt(function(attempt){
   if (attempt.user && attempt.user.emails && !attempt.user.emails[0].verified ) {
@@ -49,3 +49,4 @@ Accounts.validateLoginAttempt(function(attempt){
   }
   return true;
 }); 
+*/
