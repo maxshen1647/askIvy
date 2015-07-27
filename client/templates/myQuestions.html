@@ -2,9 +2,7 @@
   {{#if currentUser}}
   <body>
     <div id="page-outer">
-      <div id="page-container" class="content-wrapper">
-        <div class="question-container"> <!-- stream-container -->
-          <div class="question-stream"> <!-- stream home-stream -->
+      <div id="page-container" class="content-wrapper">        
             <ul class="question-items"> <!-- stream-items -->
               {{#each questions}}
                 {{> question}}
@@ -12,8 +10,7 @@
             </ul>
           </div>
         </div>
-      </div>
-    </div>
+      
     <div id="question-page"></div>
   </body>
   {{/if}}

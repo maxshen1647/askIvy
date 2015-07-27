@@ -11,18 +11,10 @@
 .page-main
 {
   display: block;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
+  font-family: "Open Sans","Raleway",Lucida Sans Unicode,Verdana,Helvetica,sans-serif;
   text-align: left;
-  color: #000;
   margin: 42px 0 0;
   padding: 0;
-}
-
-/* Top header top position */
-#top
-{
-  height: 0px; 
 }
 
 /* Set basic depth, position and properties of navigation bar */
@@ -31,26 +23,24 @@
   z-index: 1000;
   position: fixed;
   width: 100%;
-  min-height: 42px;
+  min-height: 48px;
+  top: 0px;
   padding-left: 20px;
   padding-right: 20px;
-  box-shadow: 0px 1px 14px 4px #000;
-  background: #027EAF;
+  background: rgba(0, 0, 0, 0.5);
   background-attachment: scroll;
+  
 }
 
 /* Sey basic format for elements in navigation bar */
 #toolbar .navbar-inner 
 {
-  -webkit-box-shadow: none;
-  box-shadow: none;
   z-index: 10;
   border-radius: 0 0 0 0;
   padding-left: 100%;
   padding-right: 100%;
   margin-left: -100%;
   margin-right: -100%;
-  background-color: hsla(0,0%,20%,0.5);
 }
 
 /* Floating for back layer in navigation bar */
@@ -70,7 +60,6 @@
   position: fixed;
   right: 0;
   display: block;
-  float: left;
   margin: 0 20px 0 0;
 }
 
@@ -82,41 +71,12 @@
   font-size: 15px;
 }
 
-/* Shadow and bordering for active elements in menu list */
-#mainmenu .active > a 
-{
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border-radius: 0 0 0 0;
-  font-weight: bold;
-  color: hsl(0,0%,92%);
-  text-decoration: none;
-}
-
-/* Shadow for elements in menu list */
-#mainmenu > li > a
-{
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  color: hsl(0,0%,92%);
-  text-shadow: none;
-}
-
 /* Color and shadows for elements in navigation bar */
 .navbar .nav > li > a
 {
-  -webkit-box-shadow: none;
-  box-shadow: none;
   border-radius: 0 0 0 0;
-  font-weight: bold;
   color: hsl(0,0%,92%);
   text-decoration: none;
-}
-
-/* Block display for list elements in navigation bar */
-.nav > li > a
-{
-  display: block;
 }
 
 /* Styling for Ask Harvard Logo */
@@ -127,10 +87,7 @@ a#logo
   font-style: italic;
   padding-right: 12px;
   padding-left: 12px;
-  background: #027EAF;
-  outline-color: none;
   font-size: 28px;
-  right: 1;
 }
 a#logo span
 {
@@ -140,48 +97,18 @@ a#logo span
 /* Styling for on hover Ask Harvard Logo */
 a#logo:hover
 {
-  background-position: center bottom;
-  -webkit-stroke-width: 6px; /* Chrome and Safari support */
-  -webkit-stroke-color: #FFFFFF; /* Chrome and Safari support */
-  -webkit-fill-color: #FFFFFF; /* Chrome and Safari support */
-  -moz-stroke-width: 6px; /* Mozilla support */
-  -moz-stroke-color: #FFFFFF; /* Mozilla support */
-  -moz-fill-color: #FFFFFF; /* Mozilla support */
-  -o-stroke-width: 6px; /* Opera support */
-  -o-stroke-color: #FFFFFF; /* Opera support */
-  -o-fill-color: #FFFFFF; /* Opera support */
-  stroke-width: 6px; /* Standard support */
-  stroke-color: #FFFFFF; /* Standard support */
-  fill-color: #FFFFFF; /* Standard support */
-  text-shadow: 1px 0px 20px #FFFFFF;
   color: #FFFFFF;
+  transition: color 0.2s ease-in-out 0s;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* Styling for on hover Ask Harvard Logo */
 a#logo:hover span
 {
-  background-position: center bottom;
-  -webkit-stroke-width: 6px; /* Chrome and Safari support */
-  -webkit-stroke-color: #FFFFFF; /* Chrome and Safari support */
-  -webkit-fill-color: #FFFFFF; /* Chrome and Safari support */
-  -moz-stroke-width: 6px; /* Mozilla support */
-  -moz-stroke-color: #FFFFFF; /* Mozilla support */
-  -moz-fill-color: #FFFFFF; /* Mozilla support */
-  -o-stroke-width: 6px; /* Opera support */
-  -o-stroke-color: #FFFFFF; /* Opera support */
-  -o-fill-color: #FFFFFF; /* Opera support */
-  stroke-width: 6px; /* Standard support */
-  stroke-color: #FFFFFF; /* Standard support */
-  fill-color: #FFFFFF; /* Standard support */
-  text-shadow: 1px 0px 20px #FFFFFF;
-  color: #FFFFFF;
-  color: #76EE00;
-}
-
-/* Styling for on click Ask Harvard Logo */
-a#logo:active
-{
-    background: #025E8F;
+  color: #08B4DA;
+  transition: color 0.2s ease-in-out 0s;
+  background-color: rgba(0, 0, 0, 0);
+  
 }
 
 /* Styling for Log In link */
@@ -208,103 +135,43 @@ a#logo:active
 /* Styling for Home */
 a#link-main
 {
-  background: #027EAF;
-  outline-color: none;
   font-size: 15px;
 }
 
 /* Styling for on hover Home */
 a#link-main:hover
 {
-  background-position: center bottom;
-  -webkit-stroke-width: 6px; /* Chrome and Safari support */
-  -webkit-stroke-color: #FFFFFF; /* Chrome and Safari support */
-  -webkit-fill-color: #FFFFFF; /* Chrome and Safari support */
-  -moz-stroke-width: 6px; /* Mozilla support */
-  -moz-stroke-color: #FFFFFF; /* Mozilla support */
-  -moz-fill-color: #FFFFFF; /* Mozilla support */
-  -o-stroke-width: 6px; /* Opera support */
-  -o-stroke-color: #FFFFFF; /* Opera support */
-  -o-fill-color: #FFFFFF; /* Opera support */
-  stroke-width: 6px; /* Standard support */
-  stroke-color: #FFFFFF; /* Standard support */
-  fill-color: #FFFFFF; /* Standard support */
-  text-shadow: 1px 0px 20px #FFFFFF;
-  color: #FFFFFF;
-}
-
-/* Styling for on click Home */
-a#link-main:active
-{
-    background: #025E8F;
+  color: #08B4DA;
+  transition: color 0.2s ease-in-out 0s;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* Styling for Unanswered */
 a#link-unanswered
 {
-  background: #027EAF;
-  outline-color: none;
   font-size: 15px;
 }
 
 /* Styling for on hover Unanswered */
 a#link-unanswered:hover
 {
-  background-position: center bottom;
-  -webkit-stroke-width: 6px; /* Chrome and Safari support */
-  -webkit-stroke-color: #FFFFFF; /* Chrome and Safari support */
-  -webkit-fill-color: #FFFFFF; /* Chrome and Safari support */
-  -moz-stroke-width: 6px; /* Mozilla support */
-  -moz-stroke-color: #FFFFFF; /* Mozilla support */
-  -moz-fill-color: #FFFFFF; /* Mozilla support */
-  -o-stroke-width: 6px; /* Opera support */
-  -o-stroke-color: #FFFFFF; /* Opera support */
-  -o-fill-color: #FFFFFF; /* Opera support */
-  stroke-width: 6px; /* Standard support */
-  stroke-color: #FFFFFF; /* Standard support */
-  fill-color: #FFFFFF; /* Standard support */
-  text-shadow: 1px 0px 20px #FFFFFF;
-  color: #FFFFFF;
-}
-
-/* Styling for on click Unanswered */
-a#link-unanswered:active
-{
-    background: #025E8F;
+  color: #08B4DA;
+  transition: color 0.2s ease-in-out 0s;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* Styling for My Questions */
 a#link-myquestions
 {
-  background: #027EAF;
-  outline-color: none;
   font-size: 15px;
 }
 
 /* Styling for on hover My Questions */
 a#link-myquestions:hover
 {
-  background-position: center bottom;
-  -webkit-stroke-width: 6px; /* Chrome and Safari support */
-  -webkit-stroke-color: #FFFFFF; /* Chrome and Safari support */
-  -webkit-fill-color: #FFFFFF; /* Chrome and Safari support */
-  -moz-stroke-width: 6px; /* Mozilla support */
-  -moz-stroke-color: #FFFFFF; /* Mozilla support */
-  -moz-fill-color: #FFFFFF; /* Mozilla support */
-  -o-stroke-width: 6px; /* Opera support */
-  -o-stroke-color: #FFFFFF; /* Opera support */
-  -o-fill-color: #FFFFFF; /* Opera support */
-  stroke-width: 6px; /* Standard support */
-  stroke-color: #FFFFFF; /* Standard support */
-  fill-color: #FFFFFF; /* Standard support */
-  text-shadow: 1px 0px 20px #FFFFFF;
-  color: #FFFFFF;
-}
-
-/* Styling for on click My Questions */
-a#link-myquestions:active
-{
-    background: #025E8F;
+  color: #08B4DA;
+  transition: color 0.2s ease-in-out 0s;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* Position and width for text and button wrap in Main page */
@@ -329,7 +196,6 @@ a#link-myquestions:active
   left: 0px;
   right: 0px;
   background: url("/img/john-harvard1.jpg");
-  background-position: 50% -10%;
   background-size: cover;
 }
 
@@ -416,8 +282,9 @@ a#link-myquestions:active
   width: 100%;
   height: 100%;
   position: fixed;
+  top: 0px;
   background-repeat: no-repeat;
-  z-index: 50;
+  z-index: 10;
   background-position: 50% 50%;
   overflow-x: hidden;
   background-size: cover;
@@ -442,7 +309,7 @@ overflow-x: hidden;
 /* Sets the padding and position of the canvas that wraps all text boxes within Home */
 .content-wrapper
 {
-  padding: 56px 14px 15px;
+  padding: 14px 15px;
   position: relative;
   margin: 0 auto;
   min-height: 0px;
@@ -614,8 +481,8 @@ width: 96px;
   margin-left: 0px;
   list-style: none;
   display: block;
-  top: 194px;
-  left: 30px;
+  top: 151px;
+  left: 31px;
 }
 
 /* Eliminates list tag in question boxes */
@@ -797,6 +664,7 @@ width: 96px;
   height: 100%;
   width: 100%;
   position: fixed;
+  top: 0px;
   background: url("/img/answer-background.jpg");
   background-position: 50% 50%;
   z-index: 50;
