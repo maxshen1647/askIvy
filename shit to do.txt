@@ -1,10 +1,12 @@
 functionality
+
 editing questions and answers
-allow users to create a profile (year, concentration, etc.)
+modify sign in page to allow users to create a profile (year, concentration, etc.)
 facebook login functionality
 top answers
 
-efficiency
+back-end efficiency
+
 publish: all answered questions, all of the users own unanswered question
 if harvard, then all unanswered
 subscribe?

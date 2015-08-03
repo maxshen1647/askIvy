@@ -232,11 +232,10 @@ a#link-myquestions:hover
   background: linear-gradient(bottom center, #023E6F, #027EAF); /* Standard support */
   border-radius: 3px;
   cursor: pointer;
-  font-weight: bold;
   line-height: 1em;
   text-decoration: none !important;
   display: inline-block;
-  font-family: "proxima-nova","Helvetica Neue",Arial,Helvetica,sans-serif;
+  font-family: "Open Sans","Raleway",Lucida Sans Unicode,Verdana,Helvetica,sans-serif;
 }
 
 /* Hover styling for Ask Now button */
@@ -434,9 +433,8 @@ box-shadow: none;
 color: rgb(255, 255, 255);
 cursor: pointer;
 display: inline-block;
-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-family: "Open Sans","Raleway",Lucida Sans Unicode,Verdana,Helvetica,sans-serif;
 font-size: 15px;
-font-weight: bold;
 height: 30px;
 vertical-align: center;
 padding-bottom: 8px;
@@ -562,7 +560,6 @@ width: 96px;
   color: #ccd6dd;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
   vertical-align: center;
