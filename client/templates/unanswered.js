@@ -1,7 +1,7 @@
 Template.unanswered.helpers({
     // returns all questions in the DB
     questions: function () {
-      return Questions.find({status: false}, {sort: {createdAt: -1}});
+      return Questions.find({commentsCount: 0}, {sort: {createdAt: -1}});
     },
     // checks whether current user is registered with a college.harvard.edu email
     harvardStudent: function(){

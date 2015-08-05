@@ -3,10 +3,12 @@ Template.question.helpers({
   ownQuestion: function(){
     return this.userId === Meteor.userId();
   },
+  /**
   // counts the number of answers on the current question
   commentsCount: function() {   
   	return Answers.find({questionId: this._id}).count();  
   },
+  **/
   // returns the time of submission
   timestamp: function() {
     return this.createdAt.toUTCString();

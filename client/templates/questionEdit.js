@@ -31,7 +31,7 @@ Template.questionEdit.events({
 Template.questionEdit.helpers({
    // checks whether question is allowed to be deleted
    deletable: function(){
-    return (this.userId === Meteor.userId() && Answers.find({questionId: this._id}).count() === 0);
+    return (this.userId === Meteor.userId() && this.commentsCount === 0);
   }
 });
 

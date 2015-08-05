@@ -1,11 +1,12 @@
-// publish the Questions and Answers databases, allowing the client-side to view them
+// publish the Questions database, allowing the client-side to view them
 Meteor.publish('Questions', function() {
   return Questions.find();
 });
-
-Meteor.publish('Answers', function() {
-  return Answers.find();
+// only publish the answers that belong to the question being viewed
+Meteor.publish('Answers', function(questionId) {
+  return Answers.find({ $or: [ { questionId: questionId }, { _id: questionId } ] });
 });
+
 // publish user data to the current user
 Meteor.publish("userData", function () {
   if (this.userId) {

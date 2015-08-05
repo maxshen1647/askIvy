@@ -23,7 +23,8 @@ Template.answerEdit.events({
     e.preventDefault();
 
     if (confirm("Are you sure you want to delete this answer?")) {
-      Answers.remove(this._id);
+      Questions.update(this.questionId, {$inc: {commentsCount: -1} });
+      Answers.remove(this._id); 
       Router.go('answerpage', {_id: this.questionId});
     }
   }
