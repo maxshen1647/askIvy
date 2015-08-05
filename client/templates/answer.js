@@ -23,10 +23,6 @@ Template.answer.helpers({
 });
 
 Template.answer.events({
-  // remove answer if delete button is clicked
-  "click .delete": function () {
-    Meteor.call('removeAnswer', this._id);
-  },
   // calls upvote method if upvote button is clicked
   "click .upvotable": function(e) {   
     e.preventDefault();    

@@ -541,8 +541,8 @@ width: 96px;
   vertical-align: top;
 }
 
-/* Basic styling for delete button */
-.delete
+/* Basic styling for edit button */
+.edit
 {
   background-color: #fff;
   border-bottom-color: rgba(0, 0, 0, 0);
@@ -560,29 +560,18 @@ width: 96px;
   color: #ccd6dd;
   cursor: pointer;
   display: inline-block;
-  font-size: 14px;
-  font-weight: bold;
   vertical-align: center;
   position: relative;
   text-align: center;
   float: right;
   margin-top: 1px;
   transition: 0.4s;
-}
-
-/* Changes background of delete button on mouse hover */
-.delete:hover
-{
-    border-radius: 4px;
-    background-color: #ccd6dd;
-    color: #fff;
-}
-
-/* Changes background of delete button when clicked */
-.delete:active
-{
-  border-radius: 4px;
-  background-color: #027EAF;
+  background-image: url("/img/icons1.png");
+  background-size: 34px 134px;
+  background-position: -18px -70px;
+  display: block;
+  height: 12px;
+  width: 12px;
 }
 
 /* Formatting for answer button */

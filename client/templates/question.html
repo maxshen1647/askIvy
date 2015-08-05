@@ -1,7 +1,7 @@
 <template name="question">
   <li class="question-cascade">
     <div id="upper-part">
-	    {{#if deletable}}<button class="delete">&times;</button>{{/if}}
+      {{#if ownQuestion}}<a class="edit" href="{{pathFor 'questionEdit'}}"></a>{{/if}}
 	    <span class="signature">
         <strong>{{username}}{{#if harvardStudent}}<span class="verified-question">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>{{/if}}</strong>
       </span>
@@ -14,7 +14,6 @@
     <br>
     <div  id="answer-link">
       <a class="answers-button" href="{{pathFor 'answerpage'}}">{{commentsCount}} answers</a>
-      {{#if ownPost}}<a class="answers-button" href="{{pathFor 'questionEdit'}}">Edit</a>{{/if}}
     </div>
   </li>
 </template>

@@ -5,7 +5,7 @@
         {{author}}{{#if harvardStudent}}<span class="verified-answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>{{/if}}      
       </span>
       <span class="date">{{#if harvardStudent}}Harvard Verified{{/if}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posted on {{timestamp}}</span>
-      {{#if ownAnswer}}<button class="delete">&times;</button>{{/if}}
+      {{#if ownAnswer}}<a class="edit" href="{{pathFor 'answerEdit'}}"></a>{{/if}}
       <button href="#" class="upvote btn btn-default {{upvotedClass}}">{{votes}}⬆</button>
     </h4>
     <p>{{body}}</p>
