@@ -13,6 +13,7 @@ subscribe?
 Appearance
 after i click on a menu item and then move my mouse off it, the color of the menu item becomes weird
 Sign in page needs to be widened so that scrolling isnt necessary
+formatting on questionEdit and answerEdit pages 
 
 
 
