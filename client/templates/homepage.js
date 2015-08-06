@@ -28,7 +28,7 @@ Template.homepage.helpers({
           createdAt: new Date(),  // timestamp
           userId: Meteor.userId(), // id of logged in user
           username: "Anonymous", // logs the username as anonymous
-          commentsCount: 0 
+          commentsCount: 0 // number of answers
         }); 
         alert('Thanks! Your question has been submitted. You can check the status of your questions by clicking My Questions on the menu bar.'); 
       // if checked, insert question with actual username
@@ -40,7 +40,7 @@ Template.homepage.helpers({
           userId: Meteor.userId(), // id of logged in user
           username: Meteor.user().username, //|| Meteor.user().services.facebook.name, // username or fb name of logged in user
           verified: isHarvardStudent(), //true if user is a havard student
-          commentsCount: 0 
+          commentsCount: 0 // number of answers
         });
         alert('Thanks! Your question has been submitted. You can check the status of your questions by clicking My Questions on the menu bar.'); 
       }

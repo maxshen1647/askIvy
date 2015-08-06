@@ -1,5 +1,5 @@
 functionality
-bug with unanswered questions displaying on homepage
+change commentsCount to answersCount
 modify sign in page to allow users to create a profile (year, concentration, etc.)
 facebook login functionality
 top answers

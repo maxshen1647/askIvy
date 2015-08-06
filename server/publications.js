@@ -7,11 +7,15 @@ Meteor.publish('Answers', function(questionId) {
   return Answers.find({ $or: [ { questionId: questionId }, { _id: questionId } ] });
 });
 
-// publish user data to the current user
+// publish relevant user data to the current user
 Meteor.publish("userData", function () {
   if (this.userId) {
     return Meteor.users.find({_id: this.userId});
   } else {
     this.ready();
   }
+});
+
+Meteor.publish('Notifications', function() {  
+  return Notifications.find();
 });
