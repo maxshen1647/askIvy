@@ -1,8 +1,9 @@
 functionality
-change commentsCount to answersCount
+notification system front-end
 modify sign in page to allow users to create a profile (year, concentration, etc.)
 facebook login functionality
 top answers
+pagination
 
 back-end efficiency
 
