@@ -80,7 +80,7 @@
 }
 
 /* Styling for Ask Harvard Logo */
-// logo icon positioning
+/* logo icon positioning */
 .fa-comments-o
 {
   padding-right: 7px;
@@ -703,7 +703,7 @@ width: 96px;
 }
 
 /* Upvote button format */
-// thumbs up and down icons adjustment
+/* thumbs up and down icons adjustment */
 .fa-thumbs-up
 {
   margin-right: 3px;
@@ -765,7 +765,7 @@ width: 96px;
   font-size: 12px;
   color: #bcc6cd;
 }
-// verified icon adjustments
+/* verified icon adjustments */
 .fa-check-circle
 {
   padding-left: 5px;
