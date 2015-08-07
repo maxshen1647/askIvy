@@ -2,11 +2,13 @@
   <li class="answers-list">
     <h4 id="top-answered-box">
       <span class="author">
-        {{author}}{{#if harvardStudent}}<span class="verified-answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>{{/if}}      
+        {{author}}{{#if harvardStudent}}<i class="fa fa-check-circle"></i>{{/if}}      
       </span>
       <span class="date">{{#if harvardStudent}}Harvard Verified{{/if}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posted on {{timestamp}}</span>
-      {{#if ownAnswer}}<a class="edit" href="{{pathFor 'answerEdit'}}"></a>{{/if}}
-      <button href="#" class="upvote btn btn-default {{upvotedClass}}">{{votes}}⬆</button>
+      {{#if ownAnswer}}<a class="edit" href="{{pathFor 'answerEdit'}}"><i class="fa fa-pencil-square-o"></i></a>{{/if}}
+      <button href="#" class="upvote btn btn-default {{upvotedClass}}">
+        {{#if thumbsup}}<i class="fa fa-thumbs-o-up"></i>{{else}}<i class="fa fa-thumbs-up"></i>{{/if}}{{votes}}
+      </button>
     </h4>
     <p>{{body}}</p>
   </li>

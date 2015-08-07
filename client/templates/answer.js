@@ -12,11 +12,15 @@ Template.answer.helpers({
     var userId = Meteor.userId();  
     if (userId === this.userId || userId == null) {
       return 'disabled';
-    } else if (userId && !_.include(this.upvoters, userId)) {      
+    } else if (!_.include(this.upvoters, userId)) {      
       return 'btn-primary upvotable';    
     } else {      
       return 'btn-primary unvotable';    
     }  
+  },
+  thumbsup: function() {
+  var userId = Meteor.userId();
+  return !_.include(this.upvoters, userId);
   },
   //checks whether answerer is a harvard student
   harvardStudent: function(){
