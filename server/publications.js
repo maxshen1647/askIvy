@@ -16,6 +16,7 @@ Meteor.publish("userData", function () {
   }
 });
 
-Meteor.publish('Notifications', function() {  
-  return Notifications.find();
+// only publish unread notifications of the current user 
+Meteor.publish('Notifications', function() {
+  return Notifications.find({userId: this.userId, read: false});
 });

@@ -9,8 +9,10 @@ Template.answer.helpers({
   },
   // returns the status of the upvote button
   upvotedClass: function() {    
-    var userId = Meteor.userId();    
-    if (userId && !_.include(this.upvoters, userId)) {      
+    var userId = Meteor.userId();  
+    if (userId === this.userId || userId == null) {
+      return 'disabled';
+    } else if (userId && !_.include(this.upvoters, userId)) {      
       return 'btn-primary upvotable';    
     } else {      
       return 'btn-primary unvotable';    
@@ -26,7 +28,7 @@ Template.answer.events({
   // calls upvote method if upvote button is clicked
   "click .upvotable": function(e) {   
     e.preventDefault();    
-    Meteor.call('upvote', this._id);  
+    Meteor.call('upvote', this._id, this.userId);  
   },
   "click .unvotable": function(e) {   
     e.preventDefault();    
