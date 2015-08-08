@@ -29,7 +29,6 @@
   padding-right: 20px;
   background: rgba(0, 0, 0, 0.5);
   background-attachment: scroll;
-  
 }
 
 /* Sey basic format for elements in navigation bar */
@@ -766,7 +765,7 @@ width: 96px;
   color: #bcc6cd;
 }
 /* verified icon adjustments */
-.fa-check-circle
+.fa-check-square
 {
   padding-left: 5px;
   color: #55ACEE;

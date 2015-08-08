@@ -9,19 +9,7 @@ Meteor.startup(function () {
 
   process.env.MAIL_URL = 'smtp://' + encodeURIComponent(smtp.username) + ':' + encodeURIComponent(smtp.password) + '@' + encodeURIComponent(smtp.server) + ':' + smtp.port;
 });
-/*
-// send a verification email when new user is created
-Accounts.onCreateUser(function(options, user) {
-  user.profile = {};
-  
-  // we wait for Meteor to create the user before sending an email
-  Meteor.setTimeout(function() {
-    Accounts.sendVerificationEmail(user._id);
-  }, 2 * 1000);
-  
-  return user;
-});
-*/
+
 // configure verification email 
 Meteor.startup(function() {
   
@@ -39,14 +27,3 @@ Meteor.startup(function() {
     "Welcome to askHarvard, Harvard's open Q & A platform to the world. The website is entirely run by current Harvard undergraduates. Please click on the following link to verify your email address:\n\n" + url + "\n\n" + "Cheers,\naskHarvard Team";
   };
 });
-/*
-// does not allow user to log in until email verification link is clicked
-Accounts.validateLoginAttempt(function(attempt){
-  if (attempt.user && attempt.user.emails && !attempt.user.emails[0].verified ) {
-    console.log('email not verified');
-    throw new Meteor.Error(100002, "Please click the verification link sent to you" );
-    return false; // the login is aborted
-  }
-  return true;
-}); 
-*/
