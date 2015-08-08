@@ -1,9 +1,9 @@
-/** only have to do once, when initiating the website
+/** only have to do once, when initiating the website */
 Meteor.startup(function(){
   Roles.createRole('harvard');
   Roles.createRole('admin');
   Roles.createRole('company');
-}); */
+}); 
 
 // set the role of the user when it is created
 Accounts.onCreateUser(function(options, user){

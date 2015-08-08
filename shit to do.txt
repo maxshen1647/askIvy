@@ -1,12 +1,9 @@
 FUNCTIONALITY
 enhance upvote notification, combine notifications of the same question
 make sure upvote notification doesnt repeat for same question
-modify sign in page to allow users to create a profile (year, concentration, etc.) (autoform, )
-facebook login functionality
 top answers
 pagination
-meteor roles package , making an admin account hat can do anything
-accounts-meld, accoutns-emailfield
+set admin privileges
 
 EFFICIENCY
 publish: all answered questions, all of the users own unanswered question
