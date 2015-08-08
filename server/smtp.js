@@ -13,9 +13,9 @@ Meteor.startup(function () {
 // configure verification email 
 Meteor.startup(function() {
   
-  Accounts.emailTemplates.from = 'askHarvard <askharvard@gmail.com>';
+  Accounts.emailTemplates.from = 'askIvy <askharvard@gmail.com>';
 
-  Accounts.emailTemplates.siteName = 'askHarvard';
+  Accounts.emailTemplates.siteName = 'askIvy';
 
   // subject line of the email.
   Accounts.emailTemplates.verifyEmail.subject = function(user) {
