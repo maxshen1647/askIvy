@@ -7,10 +7,7 @@ meteor-platform
 accounts-password
 iron:router
 email
-mizzao:bootstrap-3
 twbs:bootstrap
 useraccounts:bootstrap
-sacha:spin
 fortawesome:fontawesome
 alanning:roles
-

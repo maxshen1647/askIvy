@@ -1,4 +1,5 @@
 FUNCTIONALITY
+make user page
 enhance upvote notification, combine notifications of the same question
 make sure upvote notification doesnt repeat for same question
 top answers
@@ -6,9 +7,7 @@ pagination
 set admin privileges
 
 EFFICIENCY
-publish: all answered questions, all of the users own unanswered question
-if harvard, then all unanswered
-subscribe?
+
 
 APPEARANCE
 after i click on a menu item and then move my mouse off it, the color of the menu item becomes weird
