@@ -5,8 +5,12 @@ make sure upvote notification doesnt repeat for same question
 top answers
 pagination
 set admin privileges
+Add Settings tab. Specify notification preferences and answer categories within Settings.
+Filter out Unanswered questions based on category settings.
+
 
 EFFICIENCY
+Load answers within Home tab, on a one-click-display basis like Faceook or Twitter.
 
 
 APPEARANCE
