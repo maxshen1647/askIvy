@@ -1,4 +1,3 @@
-
 // make sure the same account cannot be signed in at two different locations 
 Accounts.validateLoginAttempt(function(attempt) {
   if (!attempt.allowed){
@@ -9,3 +8,5 @@ Accounts.validateLoginAttempt(function(attempt) {
     return sameUser === 0;
   }
 });
+
+AccessCodes = new Mongo.Collection("accessCodes");

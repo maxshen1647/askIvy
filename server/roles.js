@@ -6,14 +6,12 @@ Accounts.onCreateUser(function(options, user){
     var extension = email.substring(n);
     return extension === "@college.harvard.edu";
   };   
-  var role;
-  if (isHarvard(options.email))
-    role = 'harvard';
-  else
-    role = 'company';
-   
   Meteor.setTimeout(function () {
-     Roles.addUsersToRoles(user._id, role);
+    if (isHarvard(options.email))
+      Roles.addUsersToRoles(user._id, 'harvard', 'ivy');
+    else
+      Roles.addUsersToRoles(user._id, 'student', 'ivy100');
   }, 10);
+  
   return user;
 });
