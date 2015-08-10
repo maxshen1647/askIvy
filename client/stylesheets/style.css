@@ -296,7 +296,7 @@ a#link-myquestions:hover
 /* Sets properties of background picture in Home */
 #question-page
 {
-  background: url("/img/harvard.png");
+  background: url("/img/harvard.jpg");
   width: 100%;
   height: 100%;
   position: fixed;
