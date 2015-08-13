@@ -1,5 +1,5 @@
 FUNCTIONALITY
-make user page
+access code
 enhance upvote notification, combine notifications of the same question
 make sure upvote notification doesnt repeat for same question
 top answers
