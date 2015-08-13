@@ -5,7 +5,7 @@ isHarvard = function(email){
     return extension === "@college.harvard.edu";
   };
 
-// validity of registration code
+// checks validity of registration code
 isValidCode = function(code) {
            // try to find the code in the db
            var codeDoc = AccessCodes.findOne({_id: code, valid: true});
@@ -27,7 +27,7 @@ Accounts.onCreateUser(function(options, user){
     if (isHarvard(options.email))
       Roles.addUsersToRoles(user._id, 'harvard', 'ivy');
     else
-      Roles.addUsersToRoles(user._id, 'student', 'ivy100');
+      Roles.addUsersToRoles(user._id, 'student', 'consulting');
     }, 10);
   }  
   
@@ -49,8 +49,9 @@ Accounts.validateLoginAttempt(function(attempt) {
   }
 });
 
+// create db for access codes
 AccessCodes = new Mongo.Collection("accessCodes");
-
+// insert test codes (comment out if you are not testing the accounts system in order to avoid db conflicts)
 AccessCodes.insert({_id: 'a', valid: true});
 AccessCodes.insert({_id: 'b', valid: true});
 AccessCodes.insert({_id: 'c', valid: true});
