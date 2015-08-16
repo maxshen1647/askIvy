@@ -24,6 +24,7 @@
               {{#each questions}}
                 {{> question}}
               {{/each}}
+              {{#if nextPath}}      <a class="load-more" href="{{nextPath}}">Load more</a>    {{/if}}
             </ul>
           </div>
         </div>

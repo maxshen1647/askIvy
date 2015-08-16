@@ -1,8 +1,8 @@
 Template.homepage.helpers({
     // returns all questions in the DB
-    questions: function () {
+    /*questions: function () {
       return Questions.find({commentsCount: {$gt: 0}}, {sort: {createdAt: -1}});
-    },
+    },*/
     // returns the status of the ask anon checkbox
     hideCompleted: function () {
       return Session.get("hideCompleted");
