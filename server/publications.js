@@ -4,7 +4,7 @@ Meteor.publish('Answered', function(options) {
     sort: Object,    
     limit: Number  
   });  
-  return Questions.find({commentsCount: {$gt: 0}}, options);
+  return Questions.find({$and: [{commentsCount: {$gt: 0}}, {private: false}]}, options);
 });
 
 Meteor.publish('SingleQuestion', function(id) {

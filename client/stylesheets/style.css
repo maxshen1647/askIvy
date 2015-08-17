@@ -403,7 +403,7 @@ overflow-x: hidden;
 }
 
 /* Sets padding and indentation for ask anonymously feature in Home */
-.hide-completed
+.hide-completed, .private
 {
     display: inline-block;;
     padding-left: 20px;

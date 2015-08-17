@@ -4,7 +4,7 @@ make sure upvote notification doesnt repeat for same question
 top answers
 set admin privileges
 Add Settings tab. Specify notification preferences and answer categories within Settings.
-Filter out Unanswered questions based on category settings.
+Filter questions based on category settings.
 
 
 EFFICIENCY

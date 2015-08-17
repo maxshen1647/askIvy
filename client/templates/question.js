@@ -7,6 +7,9 @@ Template.question.helpers({
   timestamp: function() {
     return this.createdAt.toUTCString();
   },
+  private: function() {
+    return this.private;
+  },
   //checks whether asker is a harvard student
   harvardStudent: function(){
     return this.verified;

@@ -5,7 +5,10 @@
 	    <span class="signature">
         <strong>{{username}}{{#if harvardStudent}}<i class="fa fa-check-square"></i>{{/if}}</strong>
       </span>
-      <span class="date">{{#if harvardStudent}}Harvard Verified{{/if}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posted on {{timestamp}}</span>
+      <span class="date">
+        {{#if harvardStudent}}Harvard Verified{{/if}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posted on {{timestamp}}&nbsp;&nbsp;&nbsp;
+        {{#if private}}<strong>Private</strong>{{/if}}
+      </span>
     </div>
     <br>
     <div id="middle-part">

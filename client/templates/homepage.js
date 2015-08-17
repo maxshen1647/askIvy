@@ -2,7 +2,10 @@ Template.homepage.helpers({
     // returns the status of the ask anon checkbox
     hideCompleted: function () {
       return Session.get("hideCompleted");
-    }
+    },
+    private: function () {
+      return Session.get("private");
+    },
   });
 
   Template.homepage.events({
@@ -13,29 +16,26 @@ Template.homepage.helpers({
       //check for blank input
       if (text == "")
         return false;
-
+      if (Session.get("hideCompleted")) 
+        var username = 'Anonymous'
+      else
+        var username = Meteor.user().username;
+      if (Session.get("private")) 
+        var private = true;
+      else
+        var private = false;
       // if not logged in, display alert. 
       if (Meteor.user() == null){
       alert('Please sign in or register first. Thanks!');
       // if ask anon box is checked, insert question with username as Anonymous
-      } else if (Session.get("hideCompleted")){
-        Questions.insert({
-          text: text,
-          createdAt: new Date(),  // timestamp
-          userId: Meteor.userId(), // id of logged in user
-          username: "Anonymous", // logs the username as anonymous
-          commentsCount: 0 // number of answers
-        }); 
-        alert('Thanks! Your question has been submitted. You can check the status of your questions by clicking My Questions on the menu bar.'); 
-      // if checked, insert question with actual username
-      } else {
-        
+      } else {        
         Questions.insert({
           text: text,
           createdAt: new Date(),  //timestamp
           userId: Meteor.userId(), // id of logged in user
-          username: Meteor.user().username, //|| Meteor.user().services.facebook.name, // username or fb name of logged in user
+          username: username, // username, or anonymous if checked
           verified: isHarvardStudent(), //true if user is a havard student
+          private: private, // whether private box is checked
           commentsCount: 0 // number of answers
         });
         alert('Thanks! Your question has been submitted. You can check the status of your questions by clicking My Questions on the menu bar.'); 
@@ -50,6 +50,9 @@ Template.homepage.helpers({
     // when anonymous box is is checked/unchecked, change the session variable
     "change .hide-completed input": function (event) {
       Session.set("hideCompleted", event.target.checked);
+    },
+    "change .private input": function (event) {
+      Session.set("private", event.target.checked);
     }
   });
 
