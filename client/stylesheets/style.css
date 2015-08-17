@@ -1,17 +1,15 @@
 /**
  * styles.css
- *
- * CS50 Final Project
- *
  * Global CSS.
  */
-
 
 /* Basic formatting for all elements in main page */
 .page-main
 {
   display: block;
-  font-family: "Open Sans","Raleway",Lucida Sans Unicode,Verdana,Helvetica,sans-serif;
+  font-family: "fira-sans-2",sans-serif;
+  font-style: normal;
+  font-weight: 500;
   text-align: left;
   margin: 42px 0 0;
   padding: 0;
@@ -27,23 +25,12 @@
   top: 0px;
   padding-left: 20px;
   padding-right: 20px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   background-attachment: scroll;
 }
 
-/* Sey basic format for elements in navigation bar */
-#toolbar .navbar-inner 
-{
-  z-index: 10;
-  border-radius: 0 0 0 0;
-  padding-left: 100%;
-  padding-right: 100%;
-  margin-left: -100%;
-  margin-right: -100%;
-}
-
 /* Floating for back layer in navigation bar */
-.navbar .navbar-pull
+.navbar-pull
 {
   float: right;
   margin: 0 10px 0 0;
@@ -54,7 +41,7 @@
 }
 
 /* Fix navigation bar to top of screen */
-.navbar .nav
+.nav
 {
   position: fixed;
   right: 0;
@@ -62,20 +49,22 @@
   margin: 0 20px 0 0;
 }
 
-/* Floating for list elements in navigation bar */
-.navbar .nav > li
+/* Floating and font for list elements in navigation bar */
+.nav > li
 {
   float: left;
-  line-height: 20px;
   font-size: 15px;
+  font-family: "fira-sans-2",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
 }
 
-/* Color and shadows for elements in navigation bar */
-.navbar .nav > li > a
-{
-  border-radius: 0 0 0 0;
+/* Color for elements in navigation bar */
+.nav > li > a
+{  
+  outline: 0;
   color: hsl(0,0%,92%);
-  text-decoration: none;
 }
 
 /* Styling for Ask Harvard Logo */
@@ -95,6 +84,10 @@ a#logo
   padding-right: 12px;
   padding-left: 12px;
   font-size: 28px;
+  color: hsl(0,0%,92%);
+  float: right;
+  margin-left: 20%;
+  outline: 0;
 }
 a#logo span
 {
@@ -107,6 +100,7 @@ a#logo:hover
   color: #FFFFFF;
   transition: color 0.2s ease-in-out 0s;
   background-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
 }
 
 /* Styling for on hover Ask Harvard Logo */
@@ -117,71 +111,25 @@ a#logo:hover span
   background-color: rgba(0, 0, 0, 0);
   
 }
-
-/* Styling for Log In link */
-.link-login
+/* remove weird underline after click */
+a#logo:focus
 {
-  vertical-align: center;
-  margin-top: -4px;
-  padding: 0px 10px; 
-}
-
-/* Styling for the Q&A counter */
-#question-counter
-{
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  color: hsl(0,0%,92%);
-  font-size: 14px;
-  text-shadow: none;
   text-decoration: none;
-  padding-top: 11px;
-  padding-left: 4px;
 }
 
-/* Styling for Home */
-
-a#link-main
-{
-  font-size: 15px;
-}
-
-/* Styling for on hover Home */
-a#link-main:hover
+/* Styling for on hover menu items */
+a#link-main:hover, a#link-unanswered:hover, a#link-myquestions:hover
 {
   color: #08B4DA;
   transition: color 0.2s ease-in-out 0s;
   background-color: rgba(0, 0, 0, 0);
 }
-
-/* Styling for Unanswered */
-a#link-unanswered
+/* remove weird whie background after click*/
+a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus
 {
-  font-size: 15px;
-}
-
-/* Styling for on hover Unanswered */
-a#link-unanswered:hover
-{
-  color: #08B4DA;
-  transition: color 0.2s ease-in-out 0s;
   background-color: rgba(0, 0, 0, 0);
 }
-
-/* Styling for My Questions */
-a#link-myquestions
-{
-  font-size: 15px;
-}
-
-/* Styling for on hover My Questions */
-a#link-myquestions:hover
-{
-  color: #08B4DA;
-  transition: color 0.2s ease-in-out 0s;
-  background-color: rgba(0, 0, 0, 0);
-}
-
+/* positioning of notifications dropdown*/
 .dropdown-menu
 {
   display: block;
@@ -190,7 +138,14 @@ a#link-myquestions:hover
   line-height: 20px;
   color: #bbb;
   white-space: nowrap;
-  z-index: 15000;
+}
+
+/* Styling for Log In link */
+.link-login
+{
+  vertical-align: center;
+  margin-top: -4px;
+  padding: 0px 10px; 
 }
 
 /* Position and width for text and button wrap in Main page */
@@ -228,6 +183,7 @@ a#link-myquestions:hover
   top: 0px;
   left: 0px;
   right: 0px;
+  /*background: rgba(0, 0, 0, 0.3);*/
 }
 
 /* Styling for Ask Now button */

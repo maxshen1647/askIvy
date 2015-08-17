@@ -9,10 +9,10 @@ Filter questions based on category settings.
 
 EFFICIENCY
 Load answers within Home tab, on a one-click-display basis like Faceook or Twitter.
+advanced publications
 
 
 APPEARANCE
-after i click on a menu item and then move my mouse off it, the color of the menu item becomes weird
 Sign in page needs to be widened so that scrolling isnt necessary
 formatting on questionEdit and answerEdit pages 
 notification dropdown should only appear on click
