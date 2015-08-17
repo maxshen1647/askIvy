@@ -1,15 +1,31 @@
 // publish the Questions database, allowing the client-side to view them
-Meteor.publish('Questions', function(options) {  
+Meteor.publish('Answered', function(options) {  
   check(options, {    
     sort: Object,    
     limit: Number  
   });  
-  return Questions.find({}, options);
+  return Questions.find({commentsCount: {$gt: 0}}, options);
 });
 
 Meteor.publish('SingleQuestion', function(id) {
   check(id, String)  
   return Questions.find(id);
+});
+
+Meteor.publish('Unanswered', function(options) {  
+  check(options, {    
+    sort: Object,    
+    limit: Number  
+  });  
+  return Questions.find({commentsCount: 0}, options);
+});
+
+Meteor.publish('MyQuestions', function(options) {  
+  check(options, {    
+    sort: Object,    
+    limit: Number  
+  });  
+  return Questions.find({userId: this.userId}, options);
 });
 
 // only publish the answers that belong to the question being viewed
