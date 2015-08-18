@@ -1,0 +1,19 @@
+
+#page1 {
+    margin-top: -70px;
+    height: 1000px;
+    width: 100%;
+    background: url("/img/john-harvard1.jpg");
+    background-size: cover;
+}
+#page2 {
+    height: 1000px;
+    width: 100%;
+    background: #777CDC none repeat scroll 0% 0%;
+}
+
+#page3 {
+    height: 1000px;
+    width: 100%;
+    background: #9B70C0 none repeat scroll 0% 0%;
+}

@@ -3,18 +3,6 @@
  * Global CSS.
  */
 
-/* Basic formatting for all elements in main page */
-.page-main
-{
-  display: block;
-  font-family: "fira-sans-2",sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  text-align: left;
-  margin: 42px 0 0;
-  padding: 0;
-}
-
 /* Set basic depth, position and properties of navigation bar */
 #navbar-inner 
 {
@@ -33,7 +21,6 @@
 .navbar-pull
 {
   float: right;
-  margin: 0 10px 0 0;
   list-style: none;
   position: fixed;
   left: 0;
@@ -85,7 +72,7 @@ a#logo
   padding-left: 12px;
   font-size: 28px;
   color: hsl(0,0%,92%);
-  float: right;
+  float: left;
   margin-left: 20%;
   outline: 0;
 }
@@ -118,7 +105,7 @@ a#logo:focus
 }
 
 /* Styling for on hover menu items */
-a#link-main:hover, a#link-unanswered:hover, a#link-myquestions:hover
+a#link-main:hover, a#link-unanswered:hover, a#link-myquestions:hover, .dropdown-toggle:hover
 {
   color: #08B4DA;
   transition: color 0.2s ease-in-out 0s;
@@ -129,15 +116,10 @@ a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus
 {
   background-color: rgba(0, 0, 0, 0);
 }
-/* positioning of notifications dropdown*/
+/* styling for notifications dropdown box */
 .dropdown-menu
 {
-  display: block;
-  padding: 3px 20px;
-  clear: both;
-  line-height: 20px;
-  color: #bbb;
-  white-space: nowrap;
+  padding: 5px 5px;
 }
 
 /* Styling for Log In link */
@@ -151,15 +133,27 @@ a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus
 /* Position and width for text and button wrap in Main page */
 .wrap
 {
-  z-index: 100;
+  z-index: 10;
   position: relative;
   width: 880px;
   margin-top: 0%;
   height: 100%;
-
 }
 
-/* Styling for Main page background */
+/* Basic formatting for all elements in main page 
+.page-main
+{
+  display: block;
+  font-family: "fira-sans-2",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-align: left;
+  margin: 42px 0 0;
+  padding: 0;
+}
+
+
+/* Styling for Main page background 
 #main-bg
 {
   z-index: 10;
@@ -173,7 +167,7 @@ a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus
   background-size: cover;
 }
 
-/* Adds margin and position for Ask Now button */
+/* Adds margin and position for Ask Now button 
 .content
 {
   z-index: 950;
@@ -183,10 +177,9 @@ a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus
   top: 0px;
   left: 0px;
   right: 0px;
-  /*background: rgba(0, 0, 0, 0.3);*/
 }
 
-/* Styling for Ask Now button */
+/* Styling for Ask Now button 
 .access-homepage
 {
   z-index: 950;
@@ -201,10 +194,10 @@ a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus
   background-position: 50% 50%;
   color: #fff;
   margin: auto;
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#027EAF), to(#023E6F)); /* Safari and Chrome support */
-  background: -moz-linear-gradient(bottom center, #023E6F, #027EAF); /* Mozilla support */
-  background: -o-linear-gradient(bottom center, #023E6F, #027EAF); /* Operasupport */
-  background: linear-gradient(bottom center, #023E6F, #027EAF); /* Standard support */
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#027EAF), to(#023E6F)); /* Safari and Chrome support 
+  background: -moz-linear-gradient(bottom center, #023E6F, #027EAF); /* Mozilla support 
+  background: -o-linear-gradient(bottom center, #023E6F, #027EAF); /* Operasupport 
+  background: linear-gradient(bottom center, #023E6F, #027EAF); /* Standard support 
   border-radius: 3px;
   cursor: pointer;
   line-height: 1em;
@@ -213,13 +206,13 @@ a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus
   font-family: "Open Sans","Raleway",Lucida Sans Unicode,Verdana,Helvetica,sans-serif;
 }
 
-/* Hover styling for Ask Now button */
+/* Hover styling for Ask Now button 
 .content .access-homepage:hover
 {
   background-color: #EEE;
 }
 
-/* Active styling for Ask Now button */
+/* Active styling for Ask Now button 
 .content .access-homepage:active
 {
   border-color: #133856;
@@ -230,13 +223,13 @@ a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
 }
 
-/* Visited styling for Ask Now button */
+/* Visited styling for Ask Now button 
 .content .access-homepage:visited
 {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* Add house icon in Ask Now button */
+/* Add house icon in Ask Now button 
 .content .access-homepage i
 {
   z-index: 100;
@@ -287,7 +280,7 @@ overflow-x: hidden;
   position: relative;
   margin: 0 auto;
   min-height: 0px;
-  left: 23%;
+  left: 21%;
 }
 
 /* Sets radius and position of question box */
@@ -337,7 +330,7 @@ overflow-x: hidden;
   overflow: hidden;
   text-shadow: none;
   vertical-align: top;
-  width: 600px;
+  width: 700px;
   border-radius: 6px 6px 0px 0px;
   text-align: left;
   margin: 0;
@@ -363,6 +356,7 @@ overflow-x: hidden;
 {
     display: inline-block;;
     padding-left: 20px;
+    padding-right: 15px;
     text-indent: -15px;
     color: #fff;
 }
@@ -470,7 +464,7 @@ width: 96px;
   z-index: 100;
   border: 1px solid #e1e8ed;
   background-color: #fff;
-  width: 624px; 
+  width: 724px; 
   position: relative;
   min-height: 51px;
   padding-bottom: 9px;

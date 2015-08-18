@@ -15,7 +15,6 @@ advanced publications
 APPEARANCE
 Sign in page needs to be widened so that scrolling isnt necessary
 formatting on questionEdit and answerEdit pages 
-notification dropdown should only appear on click
 
 
 
