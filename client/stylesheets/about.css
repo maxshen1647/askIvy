@@ -1,0 +1,26 @@
+#about-page
+{
+  margin-top: -70px;
+  height: 800px;
+  width: 100%;
+  background: url("/img/john-harvard1.jpg");
+  background-size: cover;
+  position: fixed;
+}
+
+.overlay
+{
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+#about-heading
+{
+  color: hsl(0,0%,92%);
+  font-size: 6em;
+  text-align: center;
+  position: relative;
+  top: 10%;
+}

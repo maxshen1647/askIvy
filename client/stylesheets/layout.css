@@ -1,0 +1,125 @@
+/* Set basic depth, position and properties of navigation bar */
+#navbar-inner 
+{
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  height: 48px;
+  top: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Floating for back layer in navigation bar */
+.navbar-pull
+{
+  float: right;
+  list-style: none;
+  position: fixed;
+  left: 0;
+  display: block;
+}
+
+/* Fix navigation bar to top of screen */
+.nav
+{
+  position: fixed;
+  right: 0;
+  display: block;
+  margin: 0 20px 0 0;
+}
+
+/* Floating and font for list elements in navigation bar */
+.nav > li
+{
+  float: left;
+  font-size: 15px;
+  font-family: "fira-sans-2",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Color for elements in navigation bar */
+.nav > li > a
+{  
+  outline: 0;
+  color: hsl(0,0%,92%);
+}
+
+/* Styling for Ask Harvard Logo */
+/* logo icon positioning */
+.fa-comments-o
+{
+  padding-right: 7px;
+  padding-left: 7px;
+  margin-top: -10px;
+}
+
+a#logo
+{
+  font-family: Calibri;
+  font-weight: bold;
+  font-style: italic;
+  padding-right: 12px;
+  padding-left: 12px;
+  font-size: 28px;
+  color: hsl(0,0%,92%);
+  float: left;
+  margin-left: 20%;
+  outline: 0;
+}
+a#logo span
+{
+  color: #66CD00;
+}
+
+/* Styling for on hover Ask Harvard Logo */
+a#logo:hover
+{
+  color: #FFFFFF;
+  transition: color 0.2s ease-in-out 0s;
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+}
+
+/* Styling for on hover Ask Harvard Logo */
+a#logo:hover span
+{
+  color: #08B4DA;
+  transition: color 0.3s ease-in-out 0s;
+  background-color: rgba(0, 0, 0, 0);
+  
+}
+/* remove weird underline after click */
+a#logo:focus
+{
+  text-decoration: none;
+}
+
+/* Styling for on hover menu items */
+a#link-main:hover, a#link-unanswered:hover, a#link-myquestions:hover, .dropdown-toggle:hover
+{
+  color: #08B4DA;
+  transition: color 0.3s ease-in-out 0s;
+  background-color: rgba(0, 0, 0, 0);
+}
+/* remove weird whie background after click*/
+a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus
+{
+  background-color: rgba(0, 0, 0, 0);
+}
+/* styling for notifications dropdown box */
+.dropdown-menu
+{
+  padding: 5px 5px;
+}
+
+/* Styling for Log In link */
+.link-login
+{
+  vertical-align: center;
+  margin-top: -4px;
+  padding: 0px 10px; 
+}
