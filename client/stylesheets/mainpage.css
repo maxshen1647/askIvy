@@ -16,6 +16,12 @@
   color: hsl(0,0%,92%);
 }
 
+.page-padding span
+/* styling for ampersend symbol in main text */
+{
+  font-size: 0.80em;
+}
+
 /* styling for readable text */
 .header-text
 {
