@@ -20,6 +20,8 @@
 /* styling for ampersend symbol in main text */
 {
   font-size: 0.80em;
+  padding-left: 1px;
+  padding-right: 1px;
 }
 
 /* styling for readable text */
