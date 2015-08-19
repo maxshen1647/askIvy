@@ -1,8 +1,9 @@
 FUNCTIONALITY
+implement user profiles
+top answers
+set admin privileges
 enhance upvote notification, combine notifications of the same question
 make sure upvote notification doesnt repeat for same question
-top answerscd
-set admin privileges
 Add Settings tab. Specify notification preferences and answer categories within Settings.
 Filter questions based on category settings.
 
@@ -15,7 +16,7 @@ advanced publications
 APPEARANCE
 formatting on questionEdit and answerEdit pages 
 notification link not supposed to appear white on hover
-weird scrolling thing in myQuestions and Unanswered
+weird scrolling thing in myQuestions and Unanswered pages
 
 
 
