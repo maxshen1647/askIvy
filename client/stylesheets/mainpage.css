@@ -16,6 +16,12 @@
   color: hsl(0,0%,92%);
 }
 
+/* styling for readable text */
+.header-text
+{
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
 /* styling for different heading styles */
 h1
 {
@@ -34,6 +40,7 @@ h2
 
 h5, .main-buttons
 {
+  
   font-family: "fira-sans-2";
   text-align: center;
   font-size: 1.5em;
