@@ -1,0 +1,20 @@
+/*position edit elements */
+.edit-box
+{
+  position: absolute;
+  width: 650px;
+  left: 25%;
+}
+/* form title */
+.control-label
+{
+  font-family: "fira-sans-2";
+  font-weight: 700;
+  font-size: 1.5em;
+}
+/* form buttons */
+.edit-box > a, #edit-answer-button
+{
+  font-family: "fira-sans-2";
+  font-weight: 700;
+}

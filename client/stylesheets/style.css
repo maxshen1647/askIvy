@@ -350,7 +350,7 @@ width: 96px;
 {
   position: relative;
   float: left;
-  left: 28%;
+  left: 25%;
 }
 
 /* Sets the width of the question frame */
@@ -358,7 +358,7 @@ width: 96px;
 {
   border: 3px solid rgb(191, 224, 236);
   border-radius: 6px;
-  width: 630px;
+  width: 729px;
 }
 
 /* sETS THE BACKGROUND IN THE ANSWER PAGE */
@@ -381,7 +381,7 @@ width: 96px;
   z-index: 100;
   border: 1px solid #027EAF;
   background-color: #027EAF;
-  width: 624px;
+  width: 724px;
   top: 10px;
   position: relative;
   min-height: 51px;
@@ -402,7 +402,7 @@ width: 96px;
 {
   border: 1px solid #e1e8ed;
   background-color: #fff;
-  width: 612px; 
+  width: 712px; 
   position: relative;
   padding-bottom: 9px;
   padding-left: 12px;
@@ -494,7 +494,7 @@ width: 96px;
 .form-group
 {
   top: 4px;
-  width: 624px;
+  width: 724px;
 }
 
 /* Sets the margins of the answer label */
