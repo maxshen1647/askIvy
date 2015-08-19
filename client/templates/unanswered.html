@@ -4,10 +4,11 @@
     <div id="page-outer">
       <div id="page-container" class="content-wrapper">
             <ul class="question-items"> <!-- stream-items -->
+              <li class="page-title">To be Answered</li>
               {{#each questions}}
                 {{> question}}
               {{/each}}
-              {{#if nextPath}}      <a class="load-more" href="{{nextPath}}">Load more</a>    {{/if}}
+              {{#if nextPath}}<a class="load-more" href="{{nextPath}}">Load more</a>{{/if}}
             </ul>
           </div>
         </div>

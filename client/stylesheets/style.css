@@ -48,9 +48,7 @@ overflow-x: hidden;
 .content-wrapper
 {
   padding: 14px 15px;
-  position: relative;
-  margin: 0 auto;
-  min-height: 0px;
+  position: absolute;
   left: 21%;
 }
 
@@ -566,6 +564,20 @@ width: 96px;
 .form-control
 {
   resize: none;
+}
+
+/*page titles for My Quetions and Unanswered pages */
+.page-title
+{
+  background-color: #3071A9;
+  width: 724px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-family: "flood-std";
+  font-weight: 700;
+  font-size: 2.5em;
+  border-radius: 10px 10px 0 0;
 }
 
 
