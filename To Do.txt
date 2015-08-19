@@ -13,7 +13,6 @@ advanced publications
 
 
 APPEARANCE
-Sign in page needs to be widened so that scrolling isnt necessary
 formatting on questionEdit and answerEdit pages 
 notification link not supposed to appear white on hover
 
