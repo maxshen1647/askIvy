@@ -9,12 +9,11 @@
   z-index: 1000;
   position: fixed;
   width: 100%;
-  min-height: 48px;
+  height: 48px;
   top: 0px;
   padding-left: 20px;
   padding-right: 20px;
   background: rgba(0, 0, 0, 0.6);
-  background-attachment: scroll;
 }
 
 /* Floating for back layer in navigation bar */
@@ -94,7 +93,7 @@ a#logo:hover
 a#logo:hover span
 {
   color: #08B4DA;
-  transition: color 0.2s ease-in-out 0s;
+  transition: color 0.3s ease-in-out 0s;
   background-color: rgba(0, 0, 0, 0);
   
 }
@@ -108,7 +107,7 @@ a#logo:focus
 a#link-main:hover, a#link-unanswered:hover, a#link-myquestions:hover, .dropdown-toggle:hover
 {
   color: #08B4DA;
-  transition: color 0.2s ease-in-out 0s;
+  transition: color 0.3s ease-in-out 0s;
   background-color: rgba(0, 0, 0, 0);
 }
 /* remove weird whie background after click*/
@@ -138,108 +137,6 @@ a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus
   width: 880px;
   margin-top: 0%;
   height: 100%;
-}
-
-/* Basic formatting for all elements in main page 
-.page-main
-{
-  display: block;
-  font-family: "fira-sans-2",sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  text-align: left;
-  margin: 42px 0 0;
-  padding: 0;
-}
-
-
-/* Styling for Main page background 
-#main-bg
-{
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  background: url("/img/john-harvard1.jpg");
-  background-size: cover;
-}
-
-/* Adds margin and position for Ask Now button 
-.content
-{
-  z-index: 950;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-}
-
-/* Styling for Ask Now button 
-.access-homepage
-{
-  z-index: 950;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 1px 0px 0px rgba(255, 255, 255, 0.05) inset, -1px 0px 0px rgba(255, 255, 255, 0.05) inset, 0px 1px 0px rgba(255, 255, 255, 0.1) inset;
-  position: relative;
-  left: 17.2%;
-  top: 66%;
-  padding: 13px 13px 12px 42px;
-  font-size: 16px;
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
-  border: 1px solid #1C5380;
-  background-position: 50% 50%;
-  color: #fff;
-  margin: auto;
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#027EAF), to(#023E6F)); /* Safari and Chrome support 
-  background: -moz-linear-gradient(bottom center, #023E6F, #027EAF); /* Mozilla support 
-  background: -o-linear-gradient(bottom center, #023E6F, #027EAF); /* Operasupport 
-  background: linear-gradient(bottom center, #023E6F, #027EAF); /* Standard support 
-  border-radius: 3px;
-  cursor: pointer;
-  line-height: 1em;
-  text-decoration: none !important;
-  display: inline-block;
-  font-family: "Open Sans","Raleway",Lucida Sans Unicode,Verdana,Helvetica,sans-serif;
-}
-
-/* Hover styling for Ask Now button 
-.content .access-homepage:hover
-{
-  background-color: #EEE;
-}
-
-/* Active styling for Ask Now button 
-.content .access-homepage:active
-{
-  border-color: #133856;
-  background: #025E8F;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15) inset, 0px 0px 1px rgba(0, 0, 0, 0.15) inset, 0px 1px 0px rgba(255, 255, 255, 0.2);
-  border-color: #133856;
-  color: rgba(255, 255, 255, 0.8);
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
-}
-
-/* Visited styling for Ask Now button 
-.content .access-homepage:visited
-{
-  color: rgba(255, 255, 255, 0.8);
-}
-
-/* Add house icon in Ask Now button 
-.content .access-homepage i
-{
-  z-index: 100;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: url("/img/shared-assets.png") no-repeat scroll 4px -196px transparent;
 }
 
 /* Sets properties of background picture in Home */

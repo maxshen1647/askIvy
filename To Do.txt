@@ -1,7 +1,7 @@
 FUNCTIONALITY
 enhance upvote notification, combine notifications of the same question
 make sure upvote notification doesnt repeat for same question
-top answers
+top answerscd
 set admin privileges
 Add Settings tab. Specify notification preferences and answer categories within Settings.
 Filter questions based on category settings.
@@ -15,6 +15,7 @@ advanced publications
 APPEARANCE
 Sign in page needs to be widened so that scrolling isnt necessary
 formatting on questionEdit and answerEdit pages 
+notification link not supposed to appear white on hover
 
 
 

@@ -1,19 +1,67 @@
-
-#page1 {
+/* main background */
+#page {
     margin-top: -70px;
-    height: 1000px;
+    height: 800px;
     width: 100%;
     background: url("/img/john-harvard1.jpg");
     background-size: cover;
+    position: fixed;
 }
-#page2 {
-    height: 1000px;
-    width: 100%;
-    background: #777CDC none repeat scroll 0% 0%;
+/* positioning of text containing div */
+.page-padding
+{
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  color: hsl(0,0%,92%);
 }
 
-#page3 {
-    height: 1000px;
-    width: 100%;
-    background: #9B70C0 none repeat scroll 0% 0%;
+/* styling for different heading styles */
+h1
+{
+  font-family: "flood-std";
+  text-align: center;
+  font-size: 6em;
+}
+h2
+{
+  font-family: "fira-sans-2";
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h3, .main-buttons
+{
+  font-family: "fira-sans-2";
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+/* styling for sign up and learn more buttons on mainpage */
+.sign-up, .learn
+{
+  margin-top: 20px;
+  width: 150px;
+  background: #428BCA;
+  color: #fff;
+  font-family: "fira-sans-2";
+  font-size: 20px; 
+  padding: 5px 5px;
+  border-radius: 5px;
+  text-decoration: none !important;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  border: 2px solid hsl(0,0%,92%);;
+}
+
+.learn {background: #428BCA;}
+.sign-up {background: #E7746F;}
+
+.sign-up:hover, .learn:hover
+{
+  color: hsl(0,0%,92%);
+  opacity: 0.85;
 }
