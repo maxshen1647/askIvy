@@ -1,5 +1,6 @@
 FUNCTIONALITY
-implement user profiles
+move profile subscription to route level, make page to display profile
+edit profile
 top answers
 set admin privileges
 enhance upvote notification, combine notifications of the same question
@@ -15,7 +16,7 @@ advanced publications
 
 APPEARANCE
 format notFound page
-notification link not supposed to appear white on hover
+notification link not supposed turn white after click
 weird scrolling thing in myQuestions and Unanswered pages
 
 

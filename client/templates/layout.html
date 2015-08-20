@@ -22,13 +22,14 @@
 					                <li class="dropdown">
 					                   {{> notifications}}
 					                </li>
-									{{/if}}
-									<li>
-										<div class="link-login">{{> atNavButton}}</div>
-									</li>
-									<li>
+									{{else}}
+                  <li>
 										<a id="link-register" href="/sign-up">Sign Up</a>
 									</li>
+                  {{/if}}
+									<li>
+										<div class="link-login">{{> atNavButton}}</div>
+                  </li>
 								</ul>
 							</li>
 						</ul>
