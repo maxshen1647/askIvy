@@ -6,9 +6,10 @@
   width: 100%;
   height: 42px;
   top: 0px;
+  left: 0px;
   padding-left: 20px;
   padding-right: 20px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 /* Floating for back layer in navigation bar */
