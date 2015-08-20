@@ -9,7 +9,7 @@
   left: 0px;
   padding-left: 20px;
   padding-right: 20px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 /* Floating for back layer in navigation bar */
@@ -131,17 +131,20 @@ a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus, .dropdown-
   background: none;
   color: #EAEAEA;
   font-size: 16px;
-  padding-left: none;
-  padding-right: none;
-  border: none;
+  margin-top: 9px;
+  margin-left: -4px;
+  padding: 4px 14px;
+  border-color: #AAAAAA;
 }
 
 /* Styling for on hover menu items */
 #at-nav-button:hover
 {
   color: #08B4DA;
-  transition: color 0.3s ease-in-out 0s;
   background-color: rgba(0, 0, 0, 0);
+  border-color: #08B4DA;
+  transition: color 0.3s ease-in-out 0s, border-color 0.3s ease-in-out 0s;
+
 }
 /* remove weird whie background after click*/
 #at-nav-button:focus
