@@ -209,6 +209,17 @@ width: 96px;
   background: #55acee;
   outline: none;
 }
+/* question feed heading */
+.question-feed
+{
+  position: relative;
+  left: 40px;
+  width: 724px;
+  background: #fff;
+  text-align: center;
+  font-family: "flood-std";
+  font-size: 3em;
+}
 
 /* Sets position in screen for question boxes */
 .question-container

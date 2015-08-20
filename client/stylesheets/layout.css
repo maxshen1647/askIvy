@@ -142,13 +142,6 @@ a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus, .dropdown-
 #at-nav-button:hover
 {
   color: #08B4DA;
-  background-color: rgba(0, 0, 0, 0);
   border-color: #08B4DA;
   transition: color 0.3s ease-in-out 0s, border-color 0.3s ease-in-out 0s;
-
-}
-/* remove weird whie background after click*/
-#at-nav-button:focus
-{
-  background-color: rgba(0, 0, 0, 0);
 }
