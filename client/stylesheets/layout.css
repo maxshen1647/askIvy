@@ -131,6 +131,7 @@ a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus, .dropdown-
   background: none;
   color: #EAEAEA;
   font-size: 16px;
+  font-weight: 500;
   padding-left: none;
   padding-right: none;
   border: none;
