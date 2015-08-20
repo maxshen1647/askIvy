@@ -36,10 +36,17 @@ Meteor.publish('Answers', function(questionId) {
 // publish relevant user data to the current user
 Meteor.publish("userData", function () {
   if (this.userId) {
-    return Meteor.users.find({_id: this.userId});
+    return Meteor.users.find(this.userId);
   } else {
     this.ready();
   }
+});
+// relevant profile info to the current user
+Meteor.publish('Profile', function() {
+  if (this.userId) 
+    return Profiles.find(this.userId);
+  else
+    this.ready();
 });
 
 // only publish unread notifications of the current user 
