@@ -122,5 +122,28 @@ a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus
 {
   vertical-align: center;
   margin-top: -4px;
-  padding: 0px 10px; 
+  padding: 0px 10px;
+}
+
+#at-nav-button
+{
+  background: none;
+  color: #EAEAEA;
+  font-size: 16px;
+  padding-left: none;
+  padding-right: none;
+  border: none;
+}
+
+/* Styling for on hover menu items */
+#at-nav-button:hover
+{
+  color: #08B4DA;
+  transition: color 0.3s ease-in-out 0s;
+  background-color: rgba(0, 0, 0, 0);
+}
+/* remove weird whie background after click*/
+#at-nav-button:focus
+{
+  background-color: rgba(0, 0, 0, 0);
 }
