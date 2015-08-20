@@ -10,6 +10,7 @@
   padding-left: 20px;
   padding-right: 20px;
   background: rgba(0, 0, 0, 0.6);
+  display: inline;
 }
 
 /* Floating for back layer in navigation bar */
@@ -19,7 +20,7 @@
   list-style: none;
   position: fixed;
   left: 0;
-  display: block;
+  display: inline;
 }
 
 /* Fix navigation bar to top of screen */
@@ -27,8 +28,8 @@
 {
   position: fixed;
   right: 0;
-  display: block;
   margin: 0 20px 0 0;
+  display: inline;
 }
 
 /* Floating and font for list elements in navigation bar */
@@ -40,6 +41,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
+  background-color: none;
 }
 
 /* Color for elements in navigation bar */
@@ -88,7 +90,6 @@ a#logo:hover
 /* Styling for on hover Ask Harvard Logo */
 a#logo:hover span
 {
-  /*color: #08B4DA;*/
   color: #86ED00;
   transition: color 0.2s ease-in-out 0s;
   background-color: rgba(0, 0, 0, 0);
@@ -101,22 +102,24 @@ a#logo:focus
 }
 
 /* Styling for on hover menu items */
-a#link-main:hover, a#link-unanswered:hover, a#link-myquestions:hover, .dropdown-toggle:hover
+a#link-main:hover, a#link-unanswered:hover, a#link-myquestions:hover, .dropdown-toggle:hover, a#link-register:hover
 {
   color: #08B4DA;
   transition: color 0.3s ease-in-out 0s;
   background-color: rgba(0, 0, 0, 0) !important;
 }
 /* remove weird whie background after click*/
-a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus, .dropdown-toggle:focus
+a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus, .dropdown-toggle:focus, a#link-register:focus
 {
-  background-color: rgba(0, 0, 0, 0) !importamt;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 /* styling for notifications dropdown box */
 .dropdown-menu
 {
   padding: 5px 5px;
 }
+
+
 
 /* Styling for Log In link */
 .link-login
@@ -136,6 +139,7 @@ a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus, .dropdown-
   margin-left: -4px;
   padding: 4px 14px;
   border-color: #AAAAAA;
+
 }
 
 /* Styling for on hover menu items */
@@ -145,3 +149,11 @@ a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus, .dropdown-
   border-color: #08B4DA;
   transition: color 0.3s ease-in-out 0s, border-color 0.3s ease-in-out 0s;
 }
+
+#link-register
+{
+  vertical-align: center;
+  margin-top: 9px;
+  padding: 1px 7px;
+}
+

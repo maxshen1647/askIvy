@@ -71,7 +71,7 @@ h5, .main-buttons
   border: 2px solid hsl(0,0%,92%);;
 }
 
-.learn {background: clear;}
+.learn {background: #337AB7;}
 .sign-up {background: #E7746F;}
 
 .sign-up:hover, .learn:hover

@@ -2,7 +2,7 @@
 			<div class="navbar">
 				<div id="navbar-inner">
 						<ul id="toolbar-links" class="navbar-pull">
-              <li>
+              				<li>
 							  <a id="logo" href="/"><i class="fa fa-comments-o"></i>ask<span>Ivy</span></a>
 							</li>
 							<li>
@@ -19,12 +19,15 @@
 									<li>
 										<a id="link-myquestions" href="/myquestions">My Questions</a>
 									</li>
-                  <li class="dropdown">
-                    {{> notifications}}
-                  </li>
+					                <li class="dropdown">
+					                   {{> notifications}}
+					                </li>
 									{{/if}}
 									<li>
 										<div class="link-login">{{> atNavButton}}</div>
+									</li>
+									<li>
+										<a id="link-register" href="/sign-up">Sign Up</a>
 									</li>
 								</ul>
 							</li>
