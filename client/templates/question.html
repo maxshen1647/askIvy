@@ -3,7 +3,10 @@
     <div id="upper-part">
       {{#if ownQuestion}}<a class="edit" href="{{pathFor 'questionEdit'}}"><i class="fa fa-pencil-square-o"></i></a>{{/if}}
 	    <span class="signature">
-        <strong>{{username}}{{#if harvardStudent}}<i class="fa fa-check-square"></i>{{/if}}</strong>
+        <strong>
+          {{#if anonymous}}{{username}}{{else}}<a href="{{pathFor 'profile'}}">{{username}}</a>{{/if}}
+          {{#if harvardStudent}}<i class="fa fa-check-square"></i>{{/if}}
+        </strong>
       </span>
       <span class="date">
         {{#if harvardStudent}}Harvard Verified{{/if}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posted on {{timestamp}}&nbsp;&nbsp;&nbsp;

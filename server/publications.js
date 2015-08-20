@@ -6,7 +6,7 @@ Meteor.publish('Answered', function(options) {
   });  
   return Questions.find({$and: [{commentsCount: {$gt: 0}}, {private: false}]}, options);
 });
-
+  
 Meteor.publish('SingleQuestion', function(id) {
   check(id, String)  
   return Questions.find(id);
@@ -41,10 +41,10 @@ Meteor.publish("userData", function () {
     this.ready();
   }
 });
-// relevant profile info to the current user
-Meteor.publish('Profile', function() {
+// publish all profiles if logged in
+Meteor.publish('Profiles', function(profileId) {
   if (this.userId) 
-    return Profiles.find(this.userId);
+    return Profiles.find(profileId);
   else
     this.ready();
 });

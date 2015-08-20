@@ -13,5 +13,8 @@ Template.question.helpers({
   //checks whether asker is a harvard student
   harvardStudent: function(){
     return this.verified;
+  },
+  anonymous: function() {
+    return this.username === 'Anonymous';
   }
 });
