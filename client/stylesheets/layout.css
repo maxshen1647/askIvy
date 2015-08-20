@@ -104,12 +104,12 @@ a#link-main:hover, a#link-unanswered:hover, a#link-myquestions:hover, .dropdown-
 {
   color: #08B4DA;
   transition: color 0.3s ease-in-out 0s;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 /* remove weird whie background after click*/
-a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus
+a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus, .dropdown-toggle:focus
 {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0) !importamt;
 }
 /* styling for notifications dropdown box */
 .dropdown-menu
