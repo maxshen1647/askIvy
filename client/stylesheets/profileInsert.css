@@ -1,0 +1,37 @@
+.profile-box
+{
+  font-family: "fira-sans-2";
+  font-weight: 600;
+  position: absolute;
+  width: 740px;
+  left: 25%;
+}
+
+.profile-title
+{
+  font-family: "flood-std";
+  text-align: center;
+  font-size: 4em;
+  padding-bottom: 30px;
+  color: #3071A9;
+}
+
+.profile-submit
+{
+  width: 740px;
+  height: 40px;
+  background: #66BD2B;
+  color: white;
+  font-weight: 700;
+  font-size: 1.25em;
+  border: none;
+  border-radius: 3px;
+  transition: all 0.3s ease 0s;
+}
+
+.profile-submit:hover
+{
+  opacity: 0.85;
+  background: #66BD2B;
+  color: white;
+}

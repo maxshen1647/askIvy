@@ -1,13 +1,13 @@
 <template name="profileInsert">
   {{#autoForm doc=userData collection="Profiles" id="insertProfile" type="insert"}}
-    <fieldset>
-      <h2>Make a Profile</h2>
+    <fieldset class="profile-box">
+      <div class="profile-title">Make a Profile</div>
       {{> afQuickField name='_id'}}
       {{> afQuickField name='school'}}
       {{> afQuickField name='satone'}}
       {{> afQuickField name='admitted'}}
       {{> afQuickField name='major'}}
+      <button type="submit" class="profile-submit btn-primary">Submit</button>
     </fieldset>
-    <button type="submit" class="btn btn-primary">Submit</button>
   {{/autoForm}}
 </template>
