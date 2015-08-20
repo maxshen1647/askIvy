@@ -10,10 +10,11 @@
   left: 25%;
 }
 /* form title */
-.at-title
+.at-title h3
 {
   font-family: "flood-std";
   color: #3071A9;
+  font-size: 3em;
 }
 
 /* submit form button */
