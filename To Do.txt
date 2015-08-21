@@ -1,5 +1,4 @@
 FUNCTIONALITY
-creat profile form should link  to profile page on submit
 edit profile
 top answers
 set admin privileges
