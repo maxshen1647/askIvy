@@ -4,7 +4,7 @@
   <h2>Intended degree and major: {{major}}</h2>
   <h2>SAT I scores: {{satone}}</h2>
   <h2>Admitted to: {{admitted}}</h2>
-  <a href="{{pathFor 'profileEdit'}}">Edit your profile</a>
+  <a href="/profile/edit">Edit your profile</a>
 </template>
 
 <template name="profileInsert">
@@ -34,4 +34,9 @@
       <button type="submit" class="profile-submit btn-primary">Submit</button>
     </fieldset>
   {{/autoForm}}
+</template>
+
+<template name="noProfile">
+  <h1>You don't have a profile yet!</h1>
+  <a href="/profile/create">Create one here</a>
 </template>
