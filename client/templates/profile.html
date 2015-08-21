@@ -4,4 +4,34 @@
   <h2>Intended degree and major: {{major}}</h2>
   <h2>SAT I scores: {{satone}}</h2>
   <h2>Admitted to: {{admitted}}</h2>
+  <a href="{{pathFor 'profileEdit'}}">Edit your profile</a>
+</template>
+
+<template name="profileInsert">
+  {{#autoForm doc=this collection="Profiles" id="profileInsert" type="insert"}}
+    <fieldset class="profile-box">
+      <div class="profile-title">Make a Profile</div>
+      {{> afQuickField name='_id'}}
+      {{> afQuickField name='username'}}
+      {{> afQuickField name='school'}}
+      {{> afQuickField name='satone'}}
+      {{> afQuickField name='admitted'}}
+      {{> afQuickField name='major'}}
+      <button type="submit" class="profile-submit btn-primary">Submit</button>
+    </fieldset>
+  {{/autoForm}}
+</template>
+
+<template name="profileEdit">
+  {{#autoForm doc=this collection="Profiles" id="profileEdit" type="update"}}
+    <fieldset class="profile-box">
+      <div class="profile-title">Edit Your Profile</div>
+      {{> afQuickField name='username'}}
+      {{> afQuickField name='school'}}
+      {{> afQuickField name='satone'}}
+      {{> afQuickField name='admitted'}}
+      {{> afQuickField name='major'}}
+      <button type="submit" class="profile-submit btn-primary">Submit</button>
+    </fieldset>
+  {{/autoForm}}
 </template>

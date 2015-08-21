@@ -41,8 +41,8 @@ Meteor.publish("userData", function () {
     this.ready();
   }
 });
-// publish all profiles if logged in
-Meteor.publish('Profiles', function(profileId) {
+// publish any profile if logged in
+Meteor.publish('Profile', function(profileId) {
   if (this.userId) 
     return Profiles.find(profileId);
   else

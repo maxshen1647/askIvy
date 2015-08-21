@@ -1,5 +1,6 @@
 FUNCTIONALITY
 edit profile
+email template
 top answers
 set admin privileges
 enhance upvote notification, combine notifications of the same question
