@@ -28,7 +28,7 @@
 .steps
 {
   margin: auto;
-  width: 100%;
+  width: 85%;
   height: 100%;
   color: white;
   position: relative;
@@ -45,4 +45,5 @@
 .step-title
 {
   font-family: "flood-std";
+  margin-bottom: 30px;
 }
