@@ -1,16 +1,27 @@
 #about-page
 {
   margin-top: -70px;
-  height: 800px;
+  height: 1000px;
   width: 100%;
   background: url("/img/john-harvard1.jpg");
   background-size: cover;
   position: fixed;
 }
 
+/*#about-page
+{
+  background: url("/img/john-harvard1.jpg") no-repeat center center fixed; 
+  height: 800px;
+  margin-top: -70px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+
 .overlay
 {
-  height: 100%;
+  height: 1000px;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -29,10 +40,10 @@
 {
   margin: auto;
   width: 85%;
-  height: 100%;
+  height: 500px;
   color: white;
   position: relative;
-  top: 12%;
+  top: 8%;
 }
 
 .step-one, .step-two, .step-three
@@ -47,3 +58,23 @@
   font-family: "flood-std";
   margin-bottom: 30px;
 }
+
+.step-description
+{
+  margin: 35px 15px 0px; 
+}
+
+.call-to-action
+{
+  position: relative;
+  top: 100px;
+  width: 250px;
+  margin: auto;
+  text-align: center;
+}
+
+.call-to-action > a
+{
+  width: 100%;
+}
+
