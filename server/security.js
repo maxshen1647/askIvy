@@ -52,7 +52,7 @@ Accounts.validateLoginAttempt(function(attempt) {
 // create db for access codes
 AccessCodes = new Mongo.Collection("accessCodes");
 // insert test codes (comment out if you are not testing the accounts system in order to avoid db conflicts)
-// AccessCodes.insert({_id: 'a', valid: true});
+//AccessCodes.insert({_id: 'a', valid: true});
 // AccessCodes.insert({_id: 'b', valid: true});
 // AccessCodes.insert({_id: 'c', valid: true});
 
