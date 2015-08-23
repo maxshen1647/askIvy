@@ -2,6 +2,7 @@
 .edit-box
 {
   position: absolute;
+  margin-top: 70px;
   width: 650px;
   left: 25%;
 }
@@ -9,12 +10,12 @@
 .control-label
 {
   font-family: "fira-sans-2";
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.25em;
 }
 /* form buttons */
 .edit-box > a, #edit-answer-button
 {
   font-family: "fira-sans-2";
-  font-weight: 700;
+  font-weight: 500;
 }

@@ -1,8 +1,37 @@
+/* background image of profile view page*/
+#profile-background
+{
+  background: url("/img/ivy.jpg");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+/* profile box in profile view page */
+.profile-display
+{
+  position: absolute;
+  width: 750px;
+  top: 70px;
+  padding-left: 30px;
+}
+/* edit profile button in profile view page */
+.profile-display > a
+{
+  font-family: "fira-sans-2";
+  font-size: 1.25em;
+  font-weight: 500;
+  width: 170px;
+  display: block;
+  margin: auto;
+}
+
 /* box that contains profile insert and edit forms*/
 .profile-box
 {
   font-family: "fira-sans-2";
-  font-weight: 600;
+  font-weight: 500;
   width: 740px;
   margin: auto;
   display: block;
@@ -23,7 +52,7 @@
   height: 40px;
   background: #66BD2B;
   color: white;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.25em;
   border: none;
   border-radius: 3px;
@@ -35,19 +64,5 @@
   opacity: 0.85;
   background: #66BD2B;
   color: white;
-}
-/* profile box in profile view page */
-.profile-display
-{
-  position: relative;
-  top: 70px;
-}
-
-.profile-edit
-{
-  text-align: center;
-  width: 200px;
-  display: block;
-  margin: auto;
 }
 

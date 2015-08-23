@@ -1,14 +1,14 @@
 <template name="profile">
-  <div id="answer-page-background">
+  <div id="profile-background">
     <div class="profile-display">
       <h1>{{username}}</h1>
-      <h2>Currently attending: {{school}}</h2>
-      <h2>Intended degree and major: {{major}}</h2>
-      <h2>SAT I scores: {{satone}}</h2>
-      <h2>Admitted to: {{admitted}}</h2>
+      <h5><b>Currently attending:</b> {{school}}</h5>
+      <h5><b>Intended degree and major:</b> {{major}}</h5>
+      <h5><b>SAT I scores:</b> {{satone}}</h5>
+      <h5><b>Admitted to:</b> {{admitted}}</h5>
       <br />
       {{#if ownProfile}}
-        <a class="profile-edit" href="/profile/edit"><h5>Edit your profile</h5></a>
+      <a class="btn btn-primary" href="/profile/edit">Edit your profile</a>
       {{/if}}
     </div>
   </div>

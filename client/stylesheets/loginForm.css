@@ -4,7 +4,7 @@
 .login-box
 {
   font-family: "fira-sans-2";
-  font-weight: 700;
+  font-weight: 500;
   width: 740px;
   margin: auto;
   display: block;
@@ -22,7 +22,7 @@
 {
   background: #66BD2B;
   color: white;
-  font-weight: 700;
+  font-weight: 600;
   border-radius: 3px;
   transition: all 0.3s ease 0s;
 }

@@ -1,13 +1,15 @@
 <template name="answerEdit">
-  <form class="edit-box">
-    <div class="form-group">
-      <label class="control-label" for="body">Edit content</label>
-      <div class="controls">
-          <textarea name="body" value="{{body}}" class="form-control" rows="3" placeholder="Please add some content"></textarea>
+  <div id="answer-page-background">
+    <form class="edit-box">
+      <div class="form-group">
+        <label class="control-label" for="body">Edit content</label>
+        <div class="controls">
+            <textarea name="body" value="{{body}}" class="form-control" rows="3" placeholder="Please add some content"></textarea>
+        </div>
       </div>
-    </div>
-    <input type="submit" value="Submit" id="edit-answer-button" class="btn btn-primary submit"/>
-    <hr/>
-    <a class="btn btn-danger delete" href="#">Delete answer</a>
-  </form>
+      <input type="submit" value="Submit" id="edit-answer-button" class="btn btn-primary submit"/>
+      <hr/>
+      <a class="btn btn-danger delete" href="#">Delete answer</a>
+    </form>
+  </div>
 </template>
