@@ -1,12 +1,13 @@
+/* box that contains profile insert and edit forms*/
 .profile-box
 {
   font-family: "fira-sans-2";
   font-weight: 600;
-  position: absolute;
   width: 740px;
-  left: 25%;
+  margin: auto;
+  display: block;
 }
-
+/* title of profile forms */
 .profile-title
 {
   font-family: "flood-std";
@@ -15,7 +16,7 @@
   padding-bottom: 30px;
   color: #3071A9;
 }
-
+/* submit button of profile forms */
 .profile-submit
 {
   width: 740px;
@@ -35,3 +36,18 @@
   background: #66BD2B;
   color: white;
 }
+/* profile box in profile view page */
+.profile-display
+{
+  position: relative;
+  top: 70px;
+}
+
+.profile-edit
+{
+  text-align: center;
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+

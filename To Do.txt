@@ -13,7 +13,6 @@ advanced publications
 
 
 APPEARANCE
-format notFound page
 format profile view, creation, and editing pages
 weird scrolling thing in myQuestions and Unanswered pages
 
