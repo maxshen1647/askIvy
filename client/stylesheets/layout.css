@@ -157,3 +157,32 @@ a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus, .dropdown-
   padding: 1px 7px;
 }
 
+#footer
+{
+  z-index: 100;
+  position: fixed;
+  width: 150px;
+  height: 40px;
+  bottom: 0px;
+  right: 20px;
+  background: #3071A9;
+  padding: 5px;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.contact-us
+{
+  color: white;
+  font-family: "flood-std";
+}
+
+.contact-us:hover
+{
+  color: white;
+}
+
+.contact-us > i
+{
+  margin: 10px;
+}

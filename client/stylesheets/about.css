@@ -43,7 +43,7 @@
   height: 500px;
   color: white;
   position: relative;
-  top: 8%;
+  top: 5%;
 }
 
 .step-one, .step-two, .step-three
@@ -67,7 +67,7 @@
 .call-to-action
 {
   position: relative;
-  top: 100px;
+  top: 50px;
   width: 250px;
   margin: auto;
   text-align: center;
