@@ -18,3 +18,9 @@ AutoForm.addHooks(['profileInsert', 'profileEdit'], {
     }
   }
 });
+
+Template.profile.helpers({
+  ownProfile: function() {
+    return this._id === Meteor.userId();
+  }
+});
