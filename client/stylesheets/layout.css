@@ -166,7 +166,7 @@ a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus, .dropdown-
   bottom: 0px;
   right: 20px;
   background: #3071A9;
-  padding: 5px;
+  padding: 3px;
   color: white;
   border-radius: 10px 10px 0 0;
 }
@@ -175,9 +175,10 @@ a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus, .dropdown-
 {
   color: white;
   font-family: "flood-std";
+  font-size: 1.2em;
 }
 
-.contact-us:hover
+.contact-us:hover, .contact-us:focus
 {
   color: white;
 }
