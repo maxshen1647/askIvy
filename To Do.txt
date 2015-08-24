@@ -1,4 +1,5 @@
 FUNCTIONALITY
+extend user profiles
 roles
 enhance upvote notification, combine notifications of the same question
 make sure upvote notification doesnt repeat for same question
@@ -15,7 +16,6 @@ advanced publications
 
 APPEARANCE
 format login pages
-format profile view, creation, and editing pages
 weird scrolling thing in myQuestions and Unanswered pages
 
 

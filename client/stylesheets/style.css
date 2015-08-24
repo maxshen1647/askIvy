@@ -1,4 +1,4 @@
-/**
+f/**
  * styles.css
  * Global CSS.
  */
@@ -502,7 +502,7 @@ width: 96px;
 }
 
 /* Sets the width of the form that contains the answer box */
-.form-group
+.form-answer
 {
   top: 4px;
   width: 724px;
@@ -569,12 +569,6 @@ width: 96px;
     margin-top: 30px;
     height: 190px;
     margin-left: 3px;
-}
-
-/* Disables resize in the answer box */
-.form-control
-{
-  resize: none;
 }
 
 /*page titles for My Quetions and Unanswered pages */

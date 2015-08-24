@@ -13,7 +13,7 @@
 {
   position: absolute;
   width: 750px;
-  top: 70px;
+  top: 55px;
   padding-left: 30px;
 }
 /* edit profile button in profile view page */
@@ -28,13 +28,13 @@
 }
 
 /* box that contains profile insert and edit forms*/
-.profile-box
+.profile-form
 {
   font-family: "fira-sans-2";
   font-weight: 500;
-  width: 740px;
-  margin: auto;
-  display: block;
+  position: absolute;
+  top: 55px;
+  padding-left: 50px;
 }
 /* title of profile forms */
 .profile-title
@@ -43,12 +43,17 @@
   text-align: center;
   font-size: 4em;
   padding-bottom: 30px;
-  color: #3071A9;
+  color: black;
+}
+
+.form-group
+{
+  width: 650px !important;
 }
 /* submit button of profile forms */
 .profile-submit
 {
-  width: 740px;
+  width: 650px;
   height: 40px;
   background: #66BD2B;
   color: white;

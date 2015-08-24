@@ -2,21 +2,22 @@
   <div id="profile-background">
     <div class="profile-display">
       <h1>{{username}}</h1>
-      <h5><b>Currently attending:</b> {{school}}</h5>
+      <h5><b><br />Currently attending:</b> {{school}}</h5>
       <h5><b>Intended degree and major:</b> {{major}}</h5>
       <h5><b>SAT I scores:</b> {{satone}}</h5>
       <h5><b>Admitted to:</b> {{admitted}}</h5>
       <br />
       {{#if ownProfile}}
-      <a class="btn btn-primary" href="/profile/edit">Edit your profile</a>
+      <a class="btn btn-primary" href="/profile/edit"><i class="fa fa-pencil-square-o"></i>&nbsp;Edit your profile</a>
       {{/if}}
     </div>
   </div>
 </template>
 
 <template name="profileInsert">
+  <div id="profile-background">
   {{#autoForm doc=this collection="Profiles" id="profileInsert" type="insert"}}
-    <fieldset class="profile-box">
+    <fieldset class="profile-form">
       <div class="profile-title">Make a Profile</div>
       {{> afQuickField name='_id'}}
       {{> afQuickField name='username'}}
@@ -27,11 +28,13 @@
       <button type="submit" class="profile-submit btn-primary">Submit</button>
     </fieldset>
   {{/autoForm}}
+  </div>
 </template>
 
 <template name="profileEdit">
+  <div id="profile-background">
   {{#autoForm doc=this collection="Profiles" id="profileEdit" type="update"}}
-    <fieldset class="profile-box">
+    <fieldset class="profile-form">
       <div class="profile-title">Edit Your Profile</div>
       {{> afQuickField name='username'}}
       {{> afQuickField name='school'}}
@@ -41,9 +44,15 @@
       <button type="submit" class="profile-submit btn-primary">Submit</button>
     </fieldset>
   {{/autoForm}}
+  </div>
 </template>
 
 <template name="noProfile">
-  <h1>You don't have a profile yet!</h1>
-  <a href="/profile/create">Create one here</a>
+  <div id="profile-background">
+    <div class="profile-display">
+      <h1>You don't have <br /> a profile yet!</h1>
+      <br />
+      <a class="btn btn-primary" href="/profile/create"><i class="fa fa-plus"></i>&nbsp;Create profile</a>
+    </div>
+  </div>
 </template>
