@@ -25,9 +25,9 @@ Accounts.onCreateUser(function(options, user){
   } else {
     Meteor.setTimeout(function () {
     if (isHarvard(options.email))
-      Roles.addUsersToRoles(user._id, 'harvard', 'ivy');
+      Roles.addUsersToRoles(user._id, 'ivy');
     else
-      Roles.addUsersToRoles(user._id, 'student', 'consulting');
+      Roles.addUsersToRoles(user._id, 'consulting');
     }, 10);
   }  
   
@@ -53,6 +53,6 @@ Accounts.validateLoginAttempt(function(attempt) {
 AccessCodes = new Mongo.Collection("accessCodes");
 // insert test codes (comment out if you are not testing the accounts system in order to avoid db conflicts)
 //AccessCodes.insert({_id: 'a', valid: true});
-// AccessCodes.insert({_id: 'b', valid: true});
-// AccessCodes.insert({_id: 'c', valid: true});
+//AccessCodes.insert({_id: 'b', valid: true});
+//AccessCodes.insert({_id: 'c', valid: true});
 

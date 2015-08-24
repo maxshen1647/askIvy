@@ -2,8 +2,8 @@ FUNCTIONALITY
 roles
 top answers
 set admin privileges
-Add Settings tab. Specify notification preferences and answer categories within Settings.
 Filter questions based on category settings.
+Add Settings tab. Specify notification preferences and answer categories within Settings.
 
 
 EFFICIENCY

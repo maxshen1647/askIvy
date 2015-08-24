@@ -11,7 +11,7 @@
         	{{/each}}  
         </ul>
         
-        {{#if harvardStudent}}    
+        {{#if isInRole 'ivy'}}    
           {{> answerSubmit}}  
         {{else}}    
           <p>Please log in with a Harvard email to answer.</p>  

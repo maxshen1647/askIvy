@@ -34,7 +34,7 @@ Template.homepage.helpers({
           createdAt: new Date(),  //timestamp
           userId: Meteor.userId(), // id of logged in user
           username: username, // username, or anonymous if checked
-          verified: isHarvardStudent(), //true if user is a havard student
+          verified: Roles.userIsInRole(Meteor.userId(), 'ivy'), //true if user is a havard student
           private: private, // whether private box is checked
           commentsCount: 0 // number of answers
         });
