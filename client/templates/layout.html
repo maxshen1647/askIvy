@@ -15,10 +15,12 @@
 										<a id="link-unanswered" href="/unanswered">Unanswered</a>
 									</li>
 									{{/if}}
-									{{#if currentUser}}
+									{{#if isInRole 'consulting'}}
 									<li>
 										<a id="link-myquestions" href="/myquestions">My Questions</a>
 									</li>
+                  {{/if}}
+                  {{#if currentUser}}
                   <li>
                     <a id="link-myquestions" href="/profile">Profile</a>
                   </li>

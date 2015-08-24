@@ -1,5 +1,4 @@
 FUNCTIONALITY
-roles
 top answers
 set admin privileges
 Filter questions based on category settings.
