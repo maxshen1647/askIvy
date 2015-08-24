@@ -1,8 +1,5 @@
 FUNCTIONALITY
-extend user profiles
 roles
-enhance upvote notification, combine notifications of the same question
-make sure upvote notification doesnt repeat for same question
 top answers
 set admin privileges
 Add Settings tab. Specify notification preferences and answer categories within Settings.
