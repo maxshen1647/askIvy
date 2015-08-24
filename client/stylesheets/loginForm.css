@@ -1,13 +1,17 @@
 
 /*styling for div that contains login form */
-
 .login-box
 {
   font-family: "fira-sans-2";
   font-weight: 500;
-  width: 740px;
+  width: 680px;
   margin: auto;
   display: block;
+}
+/* styling input labels */
+.control-label
+{
+  font-size: 1.25em !important;
 }
 /* form title */
 .at-title h3

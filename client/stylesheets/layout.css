@@ -118,8 +118,16 @@ a#link-main:focus, a#link-unanswered:focus, a#link-myquestions:focus, .dropdown-
 {
   padding: 5px 5px;
 }
+/*width of notification items */
+.notification-item
+{
+  width: 250px;
+}
 
-
+.notification-item > li > a
+{
+  text-decoration: none;
+}
 
 /* Styling for Log In link */
 .link-login

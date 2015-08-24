@@ -18,10 +18,12 @@
 </template>
 
 <template name="notificationItem">
+  <div class="notification-item">
   <li>
     <a href="{{notificationPostPath}}">
       {{#if answer}}<strong>{{answerAuthor}}</strong> answered your question
-      {{else}}Your answer was upvoted!{{/if}}
+      {{else}}{{upvoter}} upvoted your answer!{{/if}}
     </a>
   </li>
+  </div>
 </template>

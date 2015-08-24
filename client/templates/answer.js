@@ -32,7 +32,7 @@ Template.answer.events({
   // calls upvote method if upvote button is clicked
   "click .upvotable": function(e) {   
     e.preventDefault();    
-    Meteor.call('upvote', this._id, this.userId);  
+    Meteor.call('upvote', this._id, this.userId, this.questionId);  
   },
   "click .unvotable": function(e) {   
     e.preventDefault();    
