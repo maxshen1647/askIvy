@@ -14,8 +14,11 @@ Template.homepage.helpers({
       var text = event.target.text.value;
 
       //check for blank input
-      if (text == "")
+      if (text == "") {
+        alert("Please type a question before submitting!");
         return false;
+      }
+      // if ask anon box is checked, insert question with username as Anonymous
       if (Session.get("hideCompleted")) 
         var username = 'Anonymous'
       else
@@ -25,9 +28,8 @@ Template.homepage.helpers({
       else
         var private = false;
       // if not logged in, display alert. 
-      if (Meteor.user() == null){
-      alert('Please sign in or register first. Thanks!');
-      // if ask anon box is checked, insert question with username as Anonymous
+      if (!Meteor.userId()) {
+        alert('Please sign in or register first. Thanks!');
       } else {        
         Questions.insert({
           text: text,
